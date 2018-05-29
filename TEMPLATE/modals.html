@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <a class="navbar-brand" href="#">
+          <img src="./image/dexter.png" width="50" height="50" alt="Dexter">Dexter Dojo</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav mr-auto">
+         </ul>
+         <form class="form-inline">
+           <a href="#" class="notification-counter float-right px-3" data-counter="51" >
+               <i class="fa fa-bell-o"></i>
+           </a>
+             <div class="inset">
+                 <img src="./image/img1.png">
+               </div>
+               <div class="dropdown px-3">
+                 <button class="btn clr dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Roselyn
+                 </button>
+                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                   <a class="dropdown-item" href="#">Setting</a>
+                   <a class="dropdown-item" href="#">Logout</a>
+                 </div>
+               </div>
+             </form>
+           </div>
+         </nav>
+<!-- end navbar -->
+
+<!-- cover-image -->
+         <div class="container-fluid cover-pic">
+           <div class="row">
+             <div class="col-md-12">
+             </div>
+           </div>
+         </div>
+<!-- end cover-image -->
+
+<!-- 2nd navbar -->
+             <div id="topheader">
+             <div class="sticky-top">
+               <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+                 <div class="Pro-avatar">
+                   <div class="ProAvatar">
+                     <a class="ProAvatar-container" href="" data-resolved-url-large="" data-url="" target="_blank" rel="noopener" data-original-title="">
+                       <img class="ProAvatar-image" src="./image/dp.jpg" alt="">
+                     </a>
+                   </div>
+                 </div>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                 </button>
+       <div class="collapse navbar-collapse justify-content-center" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="nav-item px-2 " style="font-size:18px;"><a class="nav-link">Stories</a></li>
+                <li class="nav-item px-2 active" style="font-size:18px;"><a class="nav-link">Class</a></li>
+                <li class="nav-item px-2" style="font-size:18px;"><a class="nav-link">Staff</a></li>
+                <li class="nav-item px-2" style="font-size:18px;"><a class="nav-link">Student</a></li>
+                <li class="nav-item px-2" style="font-size:18px;"><a class="nav-link">Event</a></li>
+                 <li class="nav-item px-2" style="font-size:18px;"><a class="nav-link">Message</a></li>
+              </ul>
+           </div>
+           <div class="justify-content-end">
+             <img src="./image/setting.png">
+           </div>
+     </nav>
+         </div>
+       </div>
+<!-- 2nd navbar end -->
+
+<!-- row || container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1"></div>
+<!-- login modal -->
+ <div class="col-md-2" style="margin-top:55px;">
+    <button class="btn btn-1 btn-2" data-toggle="modal" data-target="#login">
+  Login
+    </button>
+    <div class="modal fade" id="login">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+<!-- modal header -->
+<div class="modal-header" style="padding:5px;">
+<h3 class="col-12 modal-title text-center">
+<img src="./image/logo.png">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</h3>
+</div>
+<!-- end modal header -->
+  <ul>
+   <li class="one"><a href="#">Login</a></li>
+<li class="two"><a href="#">Signup</a></li>
+<hr class="hr">
+ </ul>
+<!-- modal body -->
+          <div class="modal-body">
+            <div style="margin-left:30px;">
+              <div class="input-group">
+                <div><img src="./image/user.png"></div>
+          <input class="form-control input" type="text"  placeholder="Email/phone">
+        </div>
+        <div class="input-group mt-4">
+          <div><img src="./image/lock.png"></div>
+    <input class="form-control input" type="password"  placeholder="Password">
+  </div>
+
+  <span href="#" style="margin-left:150px;">Forget password?</span>
+      <div class="d-flex justify-content-end" style="margin-top:35px;">
+                    <button class="btn btn-1" style="color:var(--main-primary-color);">Cancel</button>
+                      <button class="btn btn-1 btn-2 px-2">Login</button>
+        </div>
+        </div>
+          </div>
+        </div>
+<!-- end modal body -->
+        </div>
+      </div>
+    </div>
+
+<!-- end row || container -->
+  </div>
+</div>
+
+</body>
+<style>
+body{
+font-family:sans-serif;
+background-color:	#F0EFEC;
+}
+@-ms-viewport{
+  width: device-width;
+}
+:root{
+  --main-primary-color:#45b1cc;
+}
+.cover-pic{
+background:url('./image/cover.jpg') no-repeat 50% 0;
+background-size:100% auto;
+height:250px;
+  }
+.clr{
+    background-color: #f8f9fa;
+  }
+.primary{
+  color:var(--main-primary-color);
+}
+.notification-bell{
+font-size:27px;
+}
+.notification-counter {
+  position: relative;
+  font-size:2em;
+  color: #333;
+  transition: all .2s ease-in-out;
+}
+.notification-counter[data-counter]:after {
+  content: attr(data-counter);
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  font-size: .4em;
+  font-weight: bold;
+  background:var(--main-primary-color);
+  color: #fff;
+  text-align: center;
+  border-radius:50%;
+  padding: 3px 5px;
+}
+#topheader .navbar-nav li > a:hover, #topheader .navbar-nav li > a:focus {
+  cursor:pointer;
+  color: #45b1cc;
+}
+
+#topheader .navbar-nav li.active > a {
+  color: #45b1cc;
+  cursor:pointer;
+}
+.inset img {
+    -webkit-background-size: 32px 32px;
+    background-size: 32px 32px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    margin: -1px;
+    overflow: hidden;
+    position: relative;
+    height: 39px;
+    width: 39px;
+    z-index: 0;
+    cursor:pointer;
+}
+div.nav-bar a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+.Pro-avatar {
+    bottom: -28px;
+    left:150px;
+    position: absolute;
+    transition: bottom .3s;
+    z-index: 3;
+}
+  .ProAvatar {
+    background: #fff;
+    border: 5px solid #fff;
+    border-radius: 25%;
+    height:165px;
+    position: relative;
+    width:165px;
+}
+.ProAvatar-container {
+    outline: 0;
+}
+
+.u-block {
+    display: block!important;
+}
+.ProAvatar-image, .ProAvatar-placeholderImage {
+    -moz-force-broken-image-icon: 1;
+    border-radius: 25%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:350px;
+  max-width: 100%;
+  height:450px;
+  max-height: 100%;
+}
+.modal-backdrop {
+   background-color:var(--main-primary-color);
+}
+ul li {
+  display: inline;
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+  width: 25%;
+  padding: .75rem 0;
+  margin: 0;
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+ text-decoration: none;
+}
+.hr {
+  height: .25rem;
+  width: 25%;
+  margin: 0;
+  background: var(--main-primary-color);
+  border: none;
+  transition: .3s ease-in-out;
+}
+.input {
+  padding: 10px 20px;
+  margin:4px 0;
+  width:10px;
+  border-top-right-radius: 28px 30px;
+  border-bottom-right-radius: 28px 30px;
+  background-color: #fff;
+}
+.btn-1{
+        border-radius:20px;
+         padding: 5px 10px;
+        width:120px;
+        font-size: 18px;
+        margin: auto;
+}
+.btn-2{
+  background-color:var(--main-primary-color);
+  color:#fff;
+}
+</style>
+</html>
