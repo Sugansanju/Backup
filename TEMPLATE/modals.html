@@ -89,22 +89,26 @@
 <!-- buttons -->
 <div class="row">
 <div style="margin-top:85px;">
-    <button class="btn btn-1 btn-2" data-toggle="modal" data-target="#login">
+    <button class="btn btn-1 btn-2" data-toggle="modal" data-target="#modal">
   Login
-    </button>
-
-
-   <button class="btn btn-1 btn-2" data-toggle="modal" data-target="#signup">
- Signup
-   </button>
+</button>
+<button class="btn btn-1 btn-2" style="border-radius:25px;" data-toggle="modal" data-target="#account">
+Details
+</button>
+<button class="btn btn-1 btn-2" style="border-radius:25px;" data-toggle="modal" data-target="#otp">
+OTP
+</button>
+<button class="btn btn-1 btn-2" style="border-radius:25px;" data-toggle="modal" data-target="#subject">
+Subject
+</button>
 </div>
 </div>
 </div>
 </div>
 <!-- end buttons -->
 
-<!-- login modal -->
-    <div class="modal" id="login">
+<!-- login/signup modal  -->
+    <div class="modal" id="modal">
       <div class="modal-dialog modal-md">
         <div class="modal-content modalbg" style="margin-top:105px;">
           <div class="modal-header" style="padding:5px;">
@@ -115,67 +119,79 @@
           </button>
           </h3>
           </div>
-          <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#Login" aria-controls="Login" role="tab" data-toggle="tab">Login</a></li>
-    <li role="presentation"><a href="#Signup" aria-controls="Signup" role="tab" data-toggle="tab">Signup</a></li>
-  </ul>
-                <!-- <ul style="margin-top:3px;">
-                  <li class="one" style="margin-top:-7px;"><a class="a1" href="">Login</a></li>
-                  <li class="two" style="margin-top:-7px;"><a class="a1" href="">Signup</a></li>
-                  <hr class="hr"  style="margin-top:-7px;">
-                <hr class="hr1" style="margin-top:-3px;">
-                </ul> -->
-<!-- modal body --> <div class="tab-content">
-          <div role="tabpanel" class="tab-pane active" id="home">
-            <div class="modal-body">
-              <div style="margin-left:80px;margin-top:-15px;">
-                <!-- <div class="col-10">
-                  <img src="./image/user.png" style="margin-top:25px;">
-                  <input class="form-control" id="ex2" type="text" style="margin-top:-38px;border-radius:20px;">
-                </div> -->
-                <div class="col-10">
-                  <img src="./image/user.png">
-                  <input class="form-control px-4" id="ex2" type="text" style="margin-top:-38px;border-radius:20px;" placeholder="email/mobile number">
-                </div>
-                <div class="col-10 mt-4">
-                  <img src="./image/lock.png" >
-                  <input class="form-control px-4" id="ex2" type="password" style="margin-top:-38px;border-radius:20px;" placeholder="password">
-                  <br>
-                  <a href="#"  style="float:right;font-size:12px;margin-top:-20px;">
-                    forgot password?
-                  </a>
-                </div>
-            </div>
-            <!-- <div class="row">
-              <div class="col-md-8">
-              </div>
-              <div>
-                 <a href="#" class="a2" style="float:right;font-size:12px;">
-                   forgot password?
-                 </a>
-              </div>
-            </div>
-           <div>
-               <a href="#" class="a2" style="float:right;font-size:12px;">
-                 forgot password?
-               </a>
-            </div> -->
-            <div class="modal-footer">
-                  <div class="d-flex justify-content-end">
-                    <button class="btn btn-1 border" style="color:var(--main-primary-color);border: 2px solid black;">Cancel</button>
+<!-- nav tabs-->
+              <div class="modal-body">
+              <div class="tabbable-line" style="margin-left:45px;">
+                <ul class="nav nav-tabs">
+                      <li class="nav-item">
+                          <a class="nav-link active mainfont" data-toggle="tab" href="#login">Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link mainfont" data-toggle="tab" href="#signup">Signup</a>
+                      </li>
+
+                      </ul>
+                        <hr style="margin-top:-2px;margin-right:20px;margin-left:-12px;">
+<!-- end nav tabs-->
+
+<!-- login modal -->
+                  <div class="tab-content">
+                    <div role="tabbable-line" id="login" class="container tab-pane active">
+              <div style="margin-left:30px;margin-top:20px;">
+                    <div class="col-md-10">
+                        <img src="./image/user.png">
+                        <input class="form-control px-4 " id="ex2" type="text" style="margin-top:-38px;border-radius:20px;" placeholder="email/mobile number">
+                    </div>
+                    <div class="col-md-10 mt-4">
+                        <img src="./image/lock.png" >
+                        <input class="form-control px-4 " id="ex2" type="password" style="margin-top:-38px;border-radius:20px;" placeholder="password">
+                        <br>
+                        <a  class="mainfont a3" href="#"  style="float:right;font-size:12px;margin-top:-20px;">
+                          forgot password?
+                        </a>
+                    </div>
+            <div class="modal-footer footer-1">
+                  <div class="d-flex justify-content-end" >
+                    <button class="btn btn-1 border" style="color:var(--main-primary-color);border:2px solid black;margin-right:15px;">Cancel</button>
                     <button class="btn btn-1 btn-2 px-2">Login</button>
                   </div>
             </div>
           </div>
         </div>
-      </div>
-<!-- end modal body -->
-        </div>
-      </div>
 <!-- end login modal -->
 
 <!-- signup modal -->
-<div class="modal" id="signup">
+<div role="tabbable-line" id="signup" class="container tab-pane fade">
+  <div style="margin-left:30px;margin-top:20px;">
+ <div class="col-md-10">
+  <img src="./image/user.png">
+  <input class="form-control px-4 " id="ex2" type="text" style="margin-top:-38px;border-radius:20px;" placeholder="email/mobile number">
+</div>
+<div class="col-md-10 mt-4">
+  <img src="./image/lock.png" >
+  <input class="form-control px-4 " id="ex2" type="password" style="margin-top:-38px;border-radius:20px;" placeholder="password">
+</div>
+</div>
+<div class="modal-footer footer-1">
+  <div class="d-flex justify-content-end" >
+    <button class="btn btn-1 border" style="color:var(--main-primary-color);border:2px solid black;margin-right:15px;">Cancel</button>
+    <button class="btn btn-1 btn-2 px-2">Login</button>
+  </div>
+</div>
+<hr class="d-flex justify-content-center" style="margin-right:55px;">
+  <p class="mainfont text-center" style="font-size:12px;">By signing up you agree to our
+  <br><span class="primary">"Terms of Policy,Privacy agreement"</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- login/signup modal end -->
+
+<!-- account details modal -->
+<div class="modal" id="account">
   <div class="modal-dialog modal-md">
     <div class="modal-content modalbg" style="margin-top:105px;">
       <div class="modal-header" style="padding:5px;">
@@ -186,50 +202,142 @@
       </button>
       </h3>
       </div>
-            <ul style="margin-top:3px;">
-              <li class="one" style="margin-top:-7px;"><a href="#">Login</a></li>
-              <li class="two" style="margin-top:-7px;"><a href="#">Signup</a></li>
-              <hr class="hr"  style="margin-top:-7px;">
-            <hr class="hr1" style="margin-top:-3px;">
-            </ul>
-<!-- modal body -->
-        <div class="modal-body">
-          <div style="margin-left:80px;margin-top:-15px;">
-            <!-- <div class="col-10">
-              <img src="./image/user.png" style="margin-top:25px;">
-              <input class="form-control" id="ex2" type="text" style="margin-top:-38px;border-radius:20px;">
-            </div> -->
-            <div class="col-10">
-              <img src="./image/user.png">
-              <input class="form-control px-4" id="ex2" type="text" style="margin-top:-38px;border-radius:20px;" placeholder="email/mobile number">
+<div class="modal-body">
+  <div class="tabbable-line" style="margin-left:45px;margin-top:20px;">
+    <ul class="nav nav-tabs">
+          <li class="nav-item">
+              <a class="nav-link active mainfont" data-toggle="tab" href="#account">Account Details</a>
+          </li>
+          </ul>
+          <hr style="margin-top:-2px;margin-right:48px;margin-left:-5px;">
+
+          <div class="tab-content">
+            <div role="tabbable-line" id="login" class="container tab-pane active">
+              <div style="text-align:center;">
+              <img src="./image/avatar.png">
             </div>
-            <div class="col-10 mt-4">
-              <img src="./image/lock.png" >
-              <input class="form-control px-4" id="ex2" type="password" style="margin-top:-38px;border-radius:20px;" placeholder="password">
+      <div style="margin-left:30px;margin-top:20px;">
+            <div class="col-md-10">
+                <img src="./image/edit.png">
+                <input class="form-control px-4 " id="ex2" type="text" style="margin-top:-38px;border-radius:20px;" placeholder="first and last name">
             </div>
-        </div>
-          <div>
-             <a href="#" class="password" style="float:right;font-size:12px;">
-               forget password?
-             </a>
+            <div class="col-md-10 mt-4">
+                <img src="./image/edit.png" >
+                <input class="form-control px-4 " id="ex2" type="password" style="margin-top:-38px;border-radius:20px;" placeholder="first and last name">
+            </div>
+    <div class="modal-footer footer-1">
+          <div class="d-flex justify-content-end" >
+            <button class="btn btn-1 border" style="color:var(--main-primary-color);border:2px solid black;margin-right:15px;">Skip</button>
+            <button class="btn btn-1 btn-2 px-2">Update</button>
           </div>
-              <div class="d-flex justify-content-end" style="margin-top:60px;margin-left:10px;">
-                <button class="btn btn-1 border" style="color:var(--main-primary-color);border: 2px solid black;">Cancel</button>
-                <button class="btn btn-1 btn-2 px-2">Login</button>
-              </div>
-        </div>
-        <div class="modal-footer text-center">
-          <div>
-          <span class="text-center">By signing up you agree to our</span>
-        </div>
-          <span style="color:var(--main-primary-color);">"Terms of policy,privacy agreement"</span>
-        </div>
-    </div>
-<!-- end modal body -->
     </div>
   </div>
-<!-- end signup modal -->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- end account details -->
 
+<!-- otp verify -->
+<div class="modal" id="otp">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content modalbg" style="margin-top:105px;">
+      <div class="modal-header" style="padding:5px;">
+      <h3 class="col-12 modal-title text-center" style="margin-left:30px;">
+      <img src="./image/logo.png">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-left:25px;margin-top:0px;">
+      <span aria-hidden="true">&times;</span>
+      </button>
+      </h3>
+      </div>
+      <div class="modal-body">
+      <div class="tabbable-line" style="margin-left:45px;margin-top:20px;">
+        <ul class="nav nav-tabs">
+              <li class="nav-item">
+                  <a class="nav-link active mainfont" data-toggle="tab" href="#login">Verify OTP</a>
+              </li>
+              </ul>
+              <hr style="margin-top:-2px;margin-right:48px;margin-left:-5px;">
+              <div class="tab-content">
+                <div role="tabbable-line" id="login" class="container tab-pane active">
+          <div style="margin-left:30px;margin-top:20px;">
+                <div class="col-md-10">
+                    <img src="./image/otp.png">
+                    <input class="form-control px-4 " id="ex2" type="text" style="margin-top:-38px;border-radius:20px;" placeholder="* * * * * *">
+                </div>
+        <div class="modal-footer footer-1">
+              <div class="d-flex justify-content-end" >
+                <button class="btn btn-1 border" style="color:var(--main-primary-color);border:2px solid black;margin-right:15px;">Resend</button>
+                <button class="btn btn-1 btn-2 px-2">Verify</button>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- end otp verify -->
+
+<!-- subject modal -->
+<div class="modal" id="subject">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content modalbg" style="margin-top:105px;">
+      <h3 class="col-12 align-self-center text-center mainfont" style="margin-left:30px;font-size:15px;margin-top:15px;">
+      Demo class
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:5px;margin-right:20px;">
+      <span aria-hidden="true">&times;</span>
+      </button>
+      </h3>
+      <hr style="margin-top:-2px;margin-right:55px;margin-left:30px;width:450px;">
+      <div class="modal-body">
+      <div class="tabbable-line" style="margin-top:-30px;">
+        <ul class="nav nav-tabs">
+              <li class="nav-item">
+                  <a class="nav-link active mainfont" data-toggle="tab" href="#class">Class</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link mainfont" data-toggle="tab" href="#student">Student</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link mainfont" data-toggle="tab" href="#parent">Parent</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link mainfont" data-toggle="tab" href="#teacher">Teacher</a>
+              </li>
+              </ul>
+              <hr style="margin-top:-2px;margin-right:150px;margin-left:10px;width:450px;">
+              <div class="tab-content">
+                <div role="tabbable-line" id="login" class="container tab-pane active">
+          <div style="margin-left:30px;margin-top:20px;">
+                <div class="col-md-10">
+                    <img src="./image/otp.png">
+                    <input class="form-control px-4 " id="ex2" type="text" style="margin-top:-38px;border-radius:20px;" placeholder="* * * * * *">
+                </div>
+        <div class="modal-footer footer-1">
+              <div class="d-flex justify-content-end" >
+                <button class="btn btn-1 border" style="color:var(--main-primary-color);border:2px solid black;margin-right:15px;">Resend</button>
+                <button class="btn btn-1 btn-2 px-2">Verify</button>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- end subject modal -->
 <!-- end row || container -->
   </div>
 </div>
@@ -251,12 +359,23 @@ background-color:	#F0EFEC;
 }
 :root{
   --main-primary-color:#45b1cc;
+  --main-mainfont-color:#b3b3b3;
+  --main-font-color:#e6e6e6;
 }
 input::placeholder {
 text-align: center;
 }
 input{
   text-align:center;
+}
+#ex2::-webkit-input-placeholder{
+  color:var(--main-font-color);
+}
+.mainfont{
+  color:var(--main-mainfont-color);
+}
+.font{
+  color:var(--main-font-color);
 }
 .cover-pic{
 background:url('./image/cover.jpg') no-repeat 50% 0;
@@ -344,7 +463,6 @@ div.nav-bar a
 .ProAvatar-container {
     outline: 0;
 }
-
 .u-block {
     display: block!important;
 }
@@ -357,22 +475,17 @@ div.nav-bar a
     top: 0;
     width: 100%;
 }
-hr {
-width: 400px;
-margin-left: 12px;
-margin-right: 12px;
-}
 .modal-header{
   margin-left:45px;
   margin-right:45px;
 }
+.footer-1{
+  border:none;
+  margin-top:25px;
+}
 .modalbg{
-  /* -moz-border-radius: 10px;
-  -webkit-border-radius: 10px; */
   border-radius:20px;
   box-shadow: 0 0 30px #000;
- /* -moz-box-shadow: 0 0 10px #000;
- -webkit-box-shadow: 0 0 10px #000; */
 }
 .modal-backdrop {
   position: fixed;
@@ -384,19 +497,17 @@ margin-right: 12px;
     background-color:var(--main-primary-color);
     opacity:0.1;
 }
-
 ul li {
   display: inline;
   text-align: center;
 }
-
  .a1 {
   display: inline-block;
   width: 25%;
   padding: .75rem 0;
+  color:var(--main-mainfont-color);
   margin: 0;
   text-decoration: none;
-  color: #333;
 }
 .a1:hover {
  text-decoration: none;
@@ -407,27 +518,20 @@ color:var(--main-primary-color);
   padding: .75rem 0;
   margin: 0;
   text-decoration: none;
-  color: #333;
 }
 .a2:hover {
  text-decoration: none;
  color:var(--main-primary-color);
 }
-.hr {
-  height: .23rem;
-  width: 20%;
-  margin: 0;
-  background: var(--main-primary-color);
-  border: none;
-  transition: .3s ease-in-out;
+.a3:hover{
+  text-decoration: none;
+  color:var(--main-primary-color);
 }
 .input {
   padding: 10px 20px;
   margin:4px 0;
   width:3px;
   border-radius:20px;
-  /* border-top-right-radius: 28px 30px;
-  border-bottom-right-radius: 28px 30px; */
   background-color: #fff;
 }
 .border{
@@ -436,56 +540,47 @@ color:var(--main-primary-color);
 }
 .btn-1{
         border-radius:20px;
-        width:120px;
+        width:95px;
+        padding:3px;
         margin: auto;
 }
 .btn-2{
   background-color:var(--main-primary-color);
   color:#fff;
 }
-
-.nav-tabs {
-  border-bottom: 2px solid #DDD;
+.tabbable-line > .nav-tabs {
+  border: 0;
+  margin: 0px;
 }
-
-.nav-tabs>li.active>a,
-.nav-tabs>li.active>a:focus,
-.nav-tabs>li.active>a:hover {
-  border-width: 0;
+.tabbable-line > .nav-tabs > li {
+  margin-right: 2px;
+  border: 3;
 }
-
-.nav-tabs>li>a {
-  border: none;
-  color: #666;
+.tabbable-line > .nav-tabs > li > a {
+  border: 0;
+  margin-right: 0;
+  color:var(--main-mainfont-color);
 }
-
-.nav-tabs>li.active>a,
-.nav-tabs>li>a:hover {
-  border: none;
-  color: #4285F4 !important;
-  background: transparent;
+.tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
+  border-bottom: 2px solid var(--main-primary-color);
 }
-
-.nav-tabs>li>a::after {
-  content: "";
-  background: #4285F4;
-  height: 2px;
-  position: absolute;
-  width: 100%;
-  left: 0px;
-  bottom: -1px;
-  transition: all 250ms ease 0s;
-  transform: scale(0);
+.tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
+  border: 0;
+  background: none !important;
+  color:var(--main-mainfont-color);
 }
-
-.nav-tabs>li.active>a::after,
-.nav-tabs>li:hover>a::after {
-  transform: scale(1);
+.tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i {
+  color: var(--main-mainfont-color);
 }
-
-.tab-nav>li>a::after {
-  background: #21527d none repeat scroll 0% 0%;
-  color: #fff;
+.tabbable-line > .nav-tabs > li > a.active {
+   border-bottom: 2px solid var(--main-primary-color);
+  color:var(--main-mainfont-color);
+}
+.tabbable-line > .tab-content {
+  margin-top: -3px;
+  background-color: #fff;
+  border: 0;
+  padding:5px 0;
 }
 </style>
 </html>

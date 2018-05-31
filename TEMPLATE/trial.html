@@ -11,72 +11,58 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-  <div class="card main-card">
-    <div class="card-body">
-      <div class="row">
-      <div class="card date">
-        <div class="card-body">
-          <div class="text-center">
-          <b><h6>20</h6>september</b>
-        </div>
+  <div class="tabbable-line">
+    <ul class="nav nav-tabs">
+          <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+          </li>
+          </ul>
       </div>
-      </div>
-      <div class="card content">
-        <div class="card-body content-text">
-          <b>School day</b>
-          <div id="parent">
-     <p class="collapse" id="collapseParent">
-        Lorem ipsum dolor sit amet  Lorem ipsum dolor<a href="#">Read more</a>
-     </p>
-     <a class="collapsed" data-toggle="collapse" href="#collapseParent" aria-expanded="false" aria-controls="collapseParent"></a>
-   </div>
-      </div>
-      </div>
-    </div>
-  </div>
-    </div>
-  </div>
 </body>
 <style>
-.main-card{
-  height:90px;
-  width:435px;
+.tabbable-line > .nav-tabs {
+  border: 0;
+  margin: 0px;
 }
-.content{
-  margin-top:-19px;
-  width:300px;
-  height:85px;
+.tabbable-line > .nav-tabs > li {
+  margin-right: 2px;
+  border: 5;
 }
-.content-text{
-    margin-top:-15px;
+.tabbable-line > .nav-tabs > li > a {
+  border: 0;
+  margin-right: 0;
+  color: #19387d;
 }
-.date{
-  margin-top:-19px;
-  height:85px;
+.tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
+  border-bottom: 4px solid #b9aa7f;
 }
-#parent {
-  font-size: 14px;
-  line-height: 1.5;
+.tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
+  border: 0;
+  background: none !important;
+  color: #b9aa7f;
 }
-
-#parent p.collapse:not(.show) {
-    height: 1px !important;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+.tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i {
+  color: #a6a6a6;
 }
-
-#parent p {
-    min-height:45px !important;
+.tabbable-line > .nav-tabs > li > a.active {
+   border-bottom: 4px solid #b9aa7f;
+  color: #b9aa7f;
 }
-/*
-#parent a.collapsed:after  {
-    content: 'Read More';
+.tabbable-line > .tab-content {
+  margin-top: -3px;
+  background-color: #fff;
+  border: 0;
+  padding: 15px 0;
 }
 
-#parent a:not(.collapsed):after {
-    content: 'Read Less';
-} */
+
 </style>
+<script>
+</script>
 </html>
