@@ -101,6 +101,10 @@ OTP
 <button class="btn btn-1 btn-2" style="border-radius:25px;" data-toggle="modal" data-target="#subject">
 Subject
 </button>
+<button class="btn btn-1 btn-2" style="border-radius:25px;" data-toggle="modal" data-target="#addstudent">
++ Students
+</button>
+
 </div>
 </div>
 </div>
@@ -203,7 +207,7 @@ Subject
       </h3>
       </div>
 <div class="modal-body">
-  <div class="tabbable-line" style="margin-left:45px;margin-top:20px;">
+  <div class="tabbable-line" style="margin-left:45px;">
     <ul class="nav nav-tabs">
           <li class="nav-item">
               <a class="nav-link active mainfont" data-toggle="tab" href="#account">Account Details</a>
@@ -244,7 +248,7 @@ Subject
 <!-- otp verify -->
 <div class="modal" id="otp">
   <div class="modal-dialog modal-md">
-    <div class="modal-content modalbg" style="margin-top:105px;">
+    <div class="modal-content modalbg" style="margin-top:105px">
       <div class="modal-header" style="padding:5px;">
       <h3 class="col-12 modal-title text-center" style="margin-left:30px;">
       <img src="./image/logo.png">
@@ -254,7 +258,7 @@ Subject
       </h3>
       </div>
       <div class="modal-body">
-      <div class="tabbable-line" style="margin-left:45px;margin-top:20px;">
+      <div class="tabbable-line" style="margin-left:45px;">
         <ul class="nav nav-tabs">
               <li class="nav-item">
                   <a class="nav-link active mainfont" data-toggle="tab" href="#login">Verify OTP</a>
@@ -286,62 +290,230 @@ Subject
 </div>
 <!-- end otp verify -->
 
-<!-- subject modal -->
-<div class="modal" id="subject">
-  <div class="modal-dialog modal-md">
-    <div class="modal-content modalbg" style="margin-top:105px;">
-      <h3 class="col-12 align-self-center text-center mainfont" style="margin-left:30px;font-size:15px;margin-top:15px;">
-      Demo class
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:5px;margin-right:20px;">
-      <span aria-hidden="true">&times;</span>
-      </button>
-      </h3>
-      <hr style="margin-top:-2px;margin-right:55px;margin-left:30px;width:450px;">
-      <div class="modal-body">
-      <div class="tabbable-line" style="margin-top:-30px;">
-        <ul class="nav nav-tabs">
-              <li class="nav-item">
-                  <a class="nav-link active mainfont" data-toggle="tab" href="#class">Class</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link mainfont" data-toggle="tab" href="#student">Student</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link mainfont" data-toggle="tab" href="#parent">Parent</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link mainfont" data-toggle="tab" href="#teacher">Teacher</a>
-              </li>
-              </ul>
-              <hr style="margin-top:-2px;margin-right:150px;margin-left:10px;width:450px;">
-              <div class="tab-content">
-                <div role="tabbable-line" id="login" class="container tab-pane active">
-          <div style="margin-left:30px;margin-top:20px;">
-                <div class="col-md-10">
-                    <img src="./image/otp.png">
-                    <input class="form-control px-4 " id="ex2" type="text" style="margin-top:-38px;border-radius:20px;" placeholder="* * * * * *">
-                </div>
-        <div class="modal-footer footer-1">
-              <div class="d-flex justify-content-end" >
-                <button class="btn btn-1 border" style="color:var(--main-primary-color);border:2px solid black;margin-right:15px;">Resend</button>
-                <button class="btn btn-1 btn-2 px-2">Verify</button>
-              </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- end subject modal -->
-<!-- end row || container -->
-  </div>
-</div>
+<!-- class|parent|student|teacher modal -->
 
+<div class="modal" id="subject">
+
+  <div class="modal-dialog modal-md">
+
+    <div class="modal-content modalbg" style="margin-top:105px;">
+      <div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:12px;margin-right:10px;">
+        <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-header">
+      <h3 class="col-12 text-center mainfont" style="margin-left:30px;font-size:15px;">
+      Demo class
+      </h3>
+    </div>
+<!-- nav tabs-->
+          <div class="modal-body">
+            <div class="container">
+          <div class="tabbable-line" style="margin-left:45px;">
+            <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                      <a class="nav-link active mainfont" data-toggle="tab" href="#addclass">Class</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mainfont" data-toggle="tab" href="#addstudent">Student</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mainfont" data-toggle="tab" href="#addparent">Parent</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mainfont" data-toggle="tab" href="#addteacher">Teacher</a>
+                  </li>
+                  </ul>
+                    <hr style="margin-top:-2px;margin-right:20px;margin-left:-25px;width:439px;">
+<!-- end nav tabs-->
+
+<!-- add class modal -->
+              <div class="tab-content">
+                <div role="tabbable-line" id="addclass" class="container tab-pane active">
+          <div style="margin-left:30px;margin-top:10px;">
+        <div class="dropdown selection-icon" style="margin-top:-55px;">
+         <button type="button" class="btn dropdown-btn-color" data-toggle="dropdown" style="background-color:#f2f2f2ff;">
+            <img src="./image/physics.png">
+             <span class="dropdown-toggle">
+             </span>
+           </button>
+           <ul id="dropdown-image-add-class" aria-labelledby="dropdownMenu1" class="dropdown-menu">
+             <ul class="list-inline">
+              <li class="px-2">
+                 <a>
+          <img src="./image/physics.png" style="margin:3px;">
+        </a>
+      </li>
+    <li class="px-2">
+        <a>
+          <img src="./image/maths.png" style="margin:3px;">
+        </a>
+      </li>
+        <li class="px-2">
+        <a>
+          <img src="./image/che.png" style="margin:3px;">
+        </a>
+      </li>
+     <li class="px-2">
+        <a>
+          <img src="./image/physics.png" style="margin:3px;">
+        </a>
+      </li>
+      <li class="px-2">
+        <a>
+          <img src="./image/maths.png" style="margin:3px;">
+        </a>
+      </li>
+      <li class="px-2">
+        <a>
+          <img src="./image/che.png" style="margin:3px;">
+        </a>
+      </li>
+      <li class="px-2">
+        <a>
+          <img src="./image/physics.png" style="margin:3px;">
+        </a>
+      </li>
+      <li class="px-2">
+        <a>
+          <img src="./image/maths.png" style="margin:3px;">
+        </a>
+      </li>
+      <li class="px-2">
+        <a>
+          <img src="./image/che.png" style="margin:3px;">
+        </a>
+      </li>
+      <li class=" px-2">
+        <a>
+          <img src="./image/physics.png" style="margin:3px;">
+        </a>
+      </li>
+      <li class=" px-2">
+        <a>
+          <img src="./image/maths.png" style="margin:3px;">
+        </a>
+      </li>
+      <li class=" px-2">
+        <a>
+          <img src="./image/che.png" style="margin:3px;">
+        </a>
+      </li>
+        <li class=" px-2">
+        <a>
+          <img src="./image/physics.png" style="margin:3px;">
+        </a>
+      </li>
+      <li class="px-2">
+        <a>
+          <img src="./image/maths.png" style="margin:3px;">
+        </a>
+      </li>
+      <li class=" px-2">
+        <a>
+          <img src="./image/che.png" style="margin:3px;"style="margin:3px;"style="margin:3px;"style="margin:3px;">
+        </a>
+      </li>
+      <li class=" px-2">
+        <a>
+          <img src="./image/physics.png"style="margin:3px;"style="margin:3px;"style="margin:3px;" >
+        </a>
+      </li>
+      <li class="px-2">
+        <a>
+          <img src="./image/maths.png"style="margin:3px;"style="margin:3px;" >
+        </a>
+      </li>
+      <li class="px-2">
+        <a>
+          <img src="./image/che.png"style="margin:3px;" >
+        </a>
+      </li>
+    </ul>
+  </ul>
+  </div>
+  <div style="margin-left:10px;margin-top:20px;">
+  <div class="form group row">
+  <label class="mainfont col-md-4" for="classname">Class Name</label>
+    <div class="col-md-6" style="margin-right:20px;">
+              <input class="form-control" id="ex3" type="text" style="border-radius:20px;" placeholder="Physics Paper I">
+        </div>
+    </div>
+    <div class="form group row mt-4">
+        <label class="mainfont col-md-4" for="year">Year</label>
+
+      <div class="col-md-6">
+
+                <select class="form-control" style="border-radius:20px;">
+                    <option value="year2">Year 2</option>
+                    <option value="year2">Year 3</option>
+                    <option value="year2">Year 2</option>
+                    <option value="year2">Year 2</option>
+                </select>
+
+  </div>
+  </div>
+  <div class="modal-footer footer-1">
+    <div class="d-flex justify-content-end" >
+      <button class="btn btn-1 border" style="color:var(--main-primary-color);border:2px solid black;margin-right:15px;">Reset</button>
+      <button class="btn btn-1 btn-2 px-2">Save</button>
+    </div>
+  </div>
+  </div>
+  </div>
+      </div>
+<!-- end add class modal -->
+
+<!--add students modal-->
+<div role="tabbable-line" id="addstudent" class="container tab-pane fade">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2" style="padding:0rem;margin-left:-30px;">
+<ul>
+  <li>
+    <div>
+    <span
+    </div>
+  </li>
+  <li>
+    <div>
+      Oranges
+    </div>
+  </li>
+</ul>
+</div>
+<div class="col-md-2">
+<ul>
+<li>
+<div>
+Apples
+</div>
+</li>
+<li>
+<div>
+Oranges
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- end add student modal -->
+</div>
+<!-- end tab-content-->
+</div>
+</div>
+<!-- end tabbable-line end -->
+</div>
+<!-- end modal body -->
+</div>
+<!-- end modal content -->
+</div>
+<!-- end modal dialog -->
+</div>
+<!-- end modal -->
 </body>
 <style>
 body{
@@ -365,11 +537,46 @@ background-color:	#F0EFEC;
 input::placeholder {
 text-align: center;
 }
+/* option{
+text-align: center;
+} */
 input{
   text-align:center;
 }
+.dropup, .dropdown {
+    position: relative;
+}
+.selection-icon{
+text-align: center;
+padding: 5rem 5rem 2rem;
+}
+#dropdown-image-add-class .list-inline {
+      padding: 2rem 1rem;
+}
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    margin-left: -5px;
+  }
+#dropdown-image-add-class {
+    max-height:15rem;
+    max-width: 45rem;
+    border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  /*  left: auto !important;*/
+}
+dropdown-btn-color{
+  background-color:#f2f2f2ff;
+}
 #ex2::-webkit-input-placeholder{
   color:var(--main-font-color);
+}
+#ex3::-webkit-input-placeholder{
+  color:#000000ff;
+}
+.dropdown-img{
+  padding:2rem 2rem;
 }
 .mainfont{
   color:var(--main-mainfont-color);
@@ -388,8 +595,9 @@ height:250px;
 .primary{
   color:var(--main-primary-color);
 }
-.notification-bell{
-font-size:27px;
+.notification-bell
+{
+  font-size:27px;
 }
 .notification-counter {
   position: relative;
@@ -562,7 +770,7 @@ color:var(--main-primary-color);
   color:var(--main-mainfont-color);
 }
 .tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
-  border-bottom: 2px solid var(--main-primary-color);
+  border-bottom: 1px solid var(--main-primary-color);
 }
 .tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
   border: 0;
