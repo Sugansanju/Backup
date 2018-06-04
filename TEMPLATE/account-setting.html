@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+  <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand" href="#">
+            <img src="./image/dexter.png" width="50" height="50" alt="Dexter">Dexter Dojo</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav mr-auto">
+           </ul>
+           <form class="form-inline">
+             <a href="#" class="notification-counter float-right px-3" data-counter="51" >
+                 <i class="fa fa-bell-o"></i>
+             </a>
+               <div class="inset">
+                   <img src="./image/img1.png">
+                 </div>
+                 <div class="dropdown px-3">
+                   <button class="btn clr dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Roselyn
+                   </button>
+                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                     <a class="dropdown-item" href="#">Setting</a>
+                     <a class="dropdown-item" href="#">Logout</a>
+                   </div>
+                 </div>
+               </form>
+             </div>
+           </nav>
+  <!-- end navbar -->
+
+  <!-- cover-image -->
+           <div class="container-fluid cover-pic">
+             <div class="row">
+               <div class="col-md-12">
+               </div>
+             </div>
+           </div>
+  <!-- end cover-image -->
+
+  <!-- 2nd navbar -->
+
+                 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+
+                   <div class="pro-avatar">
+                     <div class="proavatar">
+                       <a class="proavatar-container" href="" data-resolved-url-large="" data-url="" target="_blank" rel="noopener" data-original-title="">
+                         <img class="proavatar-image" src="./image/dp.jpg" alt="">
+                       </a>
+                     </div>
+                   </div>
+                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                   </button>
+         <div class="collapse navbar-collapse justify-content-center" id="navbarcontent">
+            <div id="topheader">
+                <ul class="nav navbar-nav navbar-font">
+                  <li class="nav-item px-2"><a class="nav-link">Stories</a></li>
+                  <li class="nav-item px-2 active" ><a class="nav-link">Class</a></li>
+                  <li class="nav-item px-2"><a class="nav-link">Staff</a></li>
+                  <li class="nav-item px-2"><a class="nav-link">Student</a></li>
+                  <li class="nav-item px-2"><a class="nav-link">Event</a></li>
+                   <li class="nav-item px-2"><a class="nav-link">Message</a></li>
+                </ul>
+             </div>
+             </div>
+             <div class="justify-content-end">
+               <img src="./image/setting.png">
+             </div>
+
+       </nav>
+
+  <!-- end 2nd-navbar -->
+</body>
+
+<style>
+body{
+font-family:sans-serif;
+background-color:	#F0EFEC;
+}
+@media screen and (max-width:600px) {
+  .modal-md{
+      /* margin-left:5px;
+      margin-right:5px; */
+      margin:5px 5px 5px 5px;
+    }
+}
+:root{
+  --main-primary-color:#45b1cc;
+  --main-mainfont-color:#b3b3b3;
+  --main-font-color:#e6e6e6;
+}
+.primary{
+  color:var(--main-primary-color);
+}
+.mainfont{
+  color:var(--main-mainfont-color);
+}
+.font{
+  color:var(--main-font-color);
+}
+input::placeholder {
+text-align: center;
+}
+input{
+  text-align: center;
+}
+.cover-pic{
+background:url('./image/cover.jpg') no-repeat 50% 0;
+background-size:100% auto;
+height:250px;
+  }
+.notification-bell{
+font-size:27px;
+}
+.notification-counter {
+  position: relative;
+  font-size:2em;
+  color: #333;
+  transition: all .2s ease-in-out;
+}
+.notification-counter[data-counter]:after {
+  content: attr(data-counter);
+  position: absolute;
+  top: -0px;
+  left: 50%;
+  font-size: .4em;
+  font-weight: bold;
+  background:var(--main-primary-color);
+  color: #fff;
+  text-align: center;
+  border-radius:50%;
+  padding: 3px 5px;
+}
+#topheader .navbar-nav li > a:hover, #topheader .navbar-nav li > a:focus {
+  cursor:pointer;
+  color: #45b1cc;
+}
+
+#topheader .navbar-nav li.active > a {
+  color: #45b1cc;
+  cursor:pointer;
+}
+.navbar-font{
+  font-size:18px;
+  }
+.inset img {
+    -webkit-background-size: 32px 32px;
+    background-size: 32px 32px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    margin: -1px;
+    overflow: hidden;
+    position: relative;
+    height: 39px;
+    width: 39px;
+    z-index: 0;
+    cursor:pointer;
+}
+div.nav-bar a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+.modal-header{
+  margin-left:22px;
+  margin-right:20px;
+}
+.header{
+  margin-top:-40px;
+}
+.footer-1{
+  border:none;
+  margin-top:25px;
+}
+.footer-2{
+padding-top:0.5rem;
+padding-bottom:0rem;
+}
+.modalbg{
+  border-radius:20px;
+  box-shadow: 0 0 30px #000;
+}
+.modal-backdrop {
+  position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1030;
+    background-color:var(--main-primary-color);
+    opacity:0.1;
+}
+ul li {
+  display: inline;
+  text-align: center;
+}
+</style>
+
+<script>
+
+</script>
