@@ -22,7 +22,7 @@
              <ul class="navbar-nav mr-auto">
              </ul>
              <form class="form-inline">
-               <a href="#" class="notification-counter float-right px-3" data-counter="51" >
+               <a href="#" class="notification-counter float-rightt px-3" data-counter="51" >
                    <i class="fa fa-bell-o"></i>
                </a>
                  <div class="inset">
@@ -115,18 +115,18 @@ import
     <!-- login/signup modal  -->
         <div class="modal" id="modal">
           <div class="modal-dialog modal-md">
-            <div class="modal-content modalbg" style="margin-top:105px;">
-              <div class="modal-header" style="padding:5px;">
-              <h3 class="col-12 modal-title text-center" style="margin-left:30px;">
+            <div class="modal-content modalbg modaltop">
+              <div class="modal-header modalhead">
+              <h3 class="col-12 modal-title text-center logoheader">
               <img src="./image/logo.png">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-left:25px;margin-top:0px;">
+              <button type="button" class="close loginclose" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
               </button>
               </h3>
               </div>
     <!-- nav tabs-->
                   <div class="modal-body">
-                  <div class="tabbable-line" style="margin-left:45px;">
+                  <div class="tabbable-line tabpane">
                     <ul class="nav nav-tabs">
                           <li class="nav-item">
                               <a class="nav-link active mainfont" data-toggle="tab" href="#login">Login</a>
@@ -145,19 +145,19 @@ import
                   <div class="login-modal">
                         <div class="col-md-10">
                             <img src="./image/user.png">
-                            <input class="form-control input-box px-4" id="ex2" type="text" style="margin-top:-38px" placeholder="email/mobile number">
+                            <input class="form-control input-box px-4" id="ex2" type="text"  placeholder="email/mobile number">
                         </div>
                         <div class="col-md-10 mt-4">
                             <img src="./image/lock.png" >
-                            <input class="form-control  input-box px-4 " id="ex2" type="password" style="margin-top:-38px" placeholder="password">
+                            <input class="form-control  input-box px-4 " id="ex2" type="password"  placeholder="password">
                             <br>
-                            <a  class="mainfont link" href="#"  style="float:right;font-size:12px;margin-top:-20px;">
+                            <a  class="mainfont link forgotpwd" href="#">
                               forgot password?
                             </a>
                         </div>
-                <div class="modal-footer footer-1">
-                      <div class="d-flex justify-content-end" >
-                        <button class="btn btn-1 border" style="color:var(--main-primary-color);border:2px solid black;margin-right:15px;">Cancel</button>
+                <div class="modal-footer login-footer">
+                      <div class="float-rightt">
+                        <button class="btn btn-1 button1">Cancel</button>
                         <button class="btn btn-1 btn-2 px-2">Login</button>
                       </div>
                 </div>
@@ -170,16 +170,16 @@ import
       <div style="margin-left:30px;margin-top:20px;">
      <div class="col-md-10">
       <img src="./image/user.png">
-      <input class="form-control  input-box px-4 " id="ex2" type="text" style="margin-top:-38px" placeholder="email/mobile number">
+      <input class="form-control  input-box px-4 " id="ex2" type="text"  placeholder="email/mobile number">
     </div>
     <div class="col-md-10 mt-4">
       <img src="./image/lock.png" >
-      <input class="form-control  input-box  px-4 " id="ex2" type="password" style="margin-top:-38px" placeholder="password">
+      <input class="form-control  input-box  px-4 " id="ex2" type="password"  placeholder="password">
     </div>
     </div>
-    <div class="modal-footer footer-1">
-      <div class="d-flex justify-content-end" >
-        <button class="btn btn-1 border" style="color:var(--main-primary-color);border:2px solid black;margin-right:15px;">Cancel</button>
+    <div class="modal-footer login-footer">
+      <div class="float-rightt" >
+        <button class="btn btn-1 button1">Cancel</button>
         <button class="btn btn-1 btn-2 px-2">Login</button>
       </div>
     </div>
@@ -198,17 +198,17 @@ import
     <!-- account details modal -->
     <div class="modal" id="account">
       <div class="modal-dialog modal-md">
-        <div class="modal-content modalbg" style="margin-top:105px;">
-          <div class="modal-header" style="padding:5px;">
+        <div class="modal-content modalbg modaltop">
+          <div class="modal-header modalhead">
           <h3 class="col-12 modal-title text-center" style="margin-left:30px;">
           <img src="./image/logo.png">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-left:25px;margin-top:0px;">
+          <button type="button" class="close loginclose" data-dismiss="modal" aria-label="Close" style="">
           <span aria-hidden="true">&times;</span>
           </button>
           </h3>
           </div>
     <div class="modal-body">
-      <div class="tabbable-line" style="margin-left:45px;">
+      <div class="tabbable-line tabpane">
         <ul class="nav nav-tabs">
               <li class="nav-item">
                   <a class="nav-link active mainfont" data-toggle="tab" href="#account">Account Details</a>
@@ -224,15 +224,15 @@ import
           <div style="margin-left:30px;margin-top:20px;">
                 <div class="col-md-10">
                     <img src="./image/edit.png">
-                    <input class="form-control  input-box px-4 " id="ex2" type="text"  style="margin-top:-38px" placeholder="first and last name">
+                    <input class="form-control  input-box px-4 " id="ex2" type="text"   placeholder="first and last name">
                 </div>
                 <div class="col-md-10 mt-4">
                     <img src="./image/edit.png" >
-                    <input class="form-control  input-box px-4 " id="ex2" type="text" style="margin-top:-38px" placeholder="first and last name">
+                    <input class="form-control  input-box px-4 " id="ex2" type="text"  placeholder="first and last name">
                 </div>
-        <div class="modal-footer footer-1">
-              <div class="d-flex justify-content-end" >
-                <button class="btn btn-1 border" style="color:var(--main-primary-color);border:2px solid black;margin-right:15px;">Skip</button>
+        <div class="modal-footer login-footer">
+              <div class="float-right" >
+                <button class="btn btn-1 button1">Skip</button>
                 <button class="btn btn-1 btn-2 px-2">Update</button>
               </div>
         </div>
@@ -250,16 +250,16 @@ import
     <div class="modal" id="otp">
       <div class="modal-dialog modal-md">
         <div class="modal-content modalbg" style="margin-top:105px">
-          <div class="modal-header" style="padding:5px;">
+          <div class="modal-header modalhead">
           <h3 class="col-12 modal-title text-center" style="margin-left:30px;">
           <img src="./image/logo.png">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-left:25px;margin-top:0px;">
+          <button type="button" class="close login-close" data-dismiss="modal" aria-label="Close" style="">
           <span aria-hidden="true">&times;</span>
           </button>
           </h3>
           </div>
           <div class="modal-body">
-          <div class="tabbable-line" style="margin-left:45px;">
+          <div class="tabbable-line tabpane">
             <ul class="nav nav-tabs">
                   <li class="nav-item">
                       <a class="nav-link active mainfont" data-toggle="tab" href="#login">Verify OTP</a>
@@ -271,11 +271,11 @@ import
               <div style="margin-left:30px;margin-top:20px;">
                     <div class="col-md-10">
                         <img src="./image/otp.png">
-                        <input class="form-control  input-box px-4 " id="ex2" type="text" style="margin-top:-38px" placeholder="* * * * * *">
+                        <input class="form-control  input-box px-4 " id="ex2" type="text"  placeholder="* * * * * *">
                     </div>
-            <div class="modal-footer footer-1">
-                  <div class="d-flex justify-content-end" >
-                    <button class="btn btn-1 border" style="color:var(--main-primary-color);border:2px solid black;margin-right:15px;">Resend</button>
+            <div class="modal-footer login-footer">
+                  <div class="float-right" >
+                    <button class="btn btn-1 button1">Resend</button>
                     <button class="btn btn-1 btn-2 px-2">Verify</button>
                   </div>
             </div>
@@ -295,7 +295,7 @@ import
 
     <!-- <div class="modal" id="subject">
       <div class="modal-dialog modal-md">
-        <div class="modal-content modalbg" style="margin-top:105px;">
+        <div class="modal-content modalbg modaltop">
           <div>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:12px;margin-right:10px;">
             <span aria-hidden="true">&times;</span>
@@ -308,7 +308,7 @@ import
         </div> -->
         <div class="modal" id="subject">
           <div class="modal-dialog modal-md">
-            <div class="modal-content modalbg" style="margin-top:105px;">
+            <div class="modal-content modalbg modaltop">
               <div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:12px;margin-right:10px;">
                 <span aria-hidden="true">&times;</span>
@@ -463,9 +463,9 @@ import
 
     </div>
     </div>
-    <div class="modal-footer footer-1">
-    <div class="d-flex justify-content-end" >
-    <button class="btn btn-1 border" style="color:var(--main-primary-color);border:2px solid black;margin-right:15px;">Reset</button>
+    <div class="modal-footer login-footer">
+    <div class="float-right" >
+    <button class="btn btn-1 button1">Reset</button>
     <button class="btn btn-1 btn-2 px-2">Save</button>
     </div>
     </div>
@@ -594,7 +594,7 @@ import
        </div>
     </div>
     <div class="modal-footer footer-2">
-    <div class="d-flex justify-content-end" >
+    <div class="float-right" >
       <button class="btn btn-1 btn-2 px-2">Close</button>
     </div>
     </div>
@@ -1647,7 +1647,7 @@ import
     </div>
     <!-- end body -->
     <div class="modal-footer footer-2">
-    <div class="d-flex justify-content-end" >
+    <div class="float-right" >
       <button class="btn btn-1 btn-2 px-2">Close</button>
     </div>
     </div>
@@ -1760,7 +1760,7 @@ import
        </div>
     </div>
     <div class="modal-footer footer-2">
-    <div class="d-flex justify-content-end" >
+    <div class="float-right" >
       <button class="btn btn-1 btn-2 px-2">Close</button>
     </div>
     </div>
@@ -1782,7 +1782,7 @@ import
 <!-- add staff modal 1-->
     <div class="modal" id="staff1">
       <div class="modal-dialog modal-md">
-        <div class="modal-content modalbg" style="margin-top:105px;">
+        <div class="modal-content modalbg modaltop">
           <div class="modal-header staffmodal-header" style="padding:10px;">
           <h5 class="col-12 modal-title mainfont" >
             <strong>Add Staff</strong>
@@ -1797,14 +1797,14 @@ import
                 <!-- <div id="collapse1" style="display:none"> -->
                 <div class="col-md-8 offset-md-2">
                     <img src="./image/edit.png">
-                    <input class="form-control  input-box px-4 " id="ex2" type="text"  style="margin-top:-38px" placeholder="first and last name">
+                    <input class="form-control  input-box px-4 " id="ex2" type="text"   placeholder="first and last name">
                 </div>
                 <div class="col-md-8 offset-md-2 mt-4">
                     <img src="./image/user.png">
-                    <input class="form-control  input-box px-4 " id="ex2" type="text" style="margin-top:-38px" placeholder="email/mobile number">
+                    <input class="form-control  input-box px-4 " id="ex2" type="text"  placeholder="email/mobile number">
                 </div>
                 <div class="mt-3" style="margin-left:250px;">
-                <button class="btn btn-1 border" style="color:var(--main-primary-color);border:2px solid black;margin-right:15px;">Bulk import</button>
+                <button class="btn btn-1 button1">Bulk import</button>
                 <button class="btn btn-1 btn-2 ">Add</button>
               </div>
             </div>
@@ -1892,7 +1892,7 @@ import
           <div class="modal-footer">
             <div class="d-flex justify-content-end" >
             <div class="col-6 col-md-6">  <span class="primary">Bulk import how to?</span></div>
-            <button class="btn btn-1 border" style="color:var(--main-primary-color);border:2px solid black;margin-right:15px;">Cancel</button>
+            <button class="btn btn-1 button1">Cancel</button>
             <button class="btn btn-1 btn-2 px-2">Save</button>
             </div>
           </div>
@@ -1904,7 +1904,7 @@ import
 <!--import modal -->
  <div class="modal" id="import">
   <div class="modal-dialog modal-md">
-    <div class="modal-content modalbg" style="margin-top:105px;">
+    <div class="modal-content modalbg modaltop">
       <div class="modal-header staffmodal-header" style="padding:10px;">
       <h5 class="col-12 modal-title mainfont" >
         <strong>Confirm your import</strong>
@@ -2037,7 +2037,7 @@ import
         <div class="importfooter-content">
           <p>Please correct the errors/missings to import properly.<br>The items with errors could not be imported.</p>
           <div class="float-right">
-          <button class="btn btn-1 border" style="color:var(--main-primary-color);border:2px solid black;margin-right:15px;">Cancel</button>
+          <button class="btn btn-1 button1">Cancel</button>
           <button class="btn btn-1 btn-2 px-2">Import</button>
         </div>
       </div>
@@ -2073,14 +2073,12 @@ import
     }
     .input-box{
         border-radius:20px;
+        margin-top:-38px;
     }
     .login-modal{
       margin-left:30px;
       margin-top:20px;
     }
-    /* .dropup, .dropdown {
-        position: relative;
-    } */
     .selection-icon{
     text-align: center;
     padding: 5rem 5rem 2rem;
@@ -2226,9 +2224,13 @@ import
     .header{
       margin-top:-40px;
     }
-    .footer-1{
+    .login-footer{
       border:none;
       margin-top:25px;
+    }
+    .loginfooter-btn{
+      color:var(--main-primary-color);
+      margin-left:-30px;
     }
     .footer-2{
     padding-top:0.5rem;
@@ -2240,40 +2242,18 @@ import
     }
     .modal-backdrop {
       position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 1030;
-        background-color:var(--main-primary-color);
-        opacity:0.1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1030;
+      background-color:var(--main-primary-color);
+      opacity:0.1;
     }
     ul li {
       display: inline;
       text-align: center;
     }
-     /* .a1 {
-      display: inline-block;
-      width: 25%;
-      padding: .75rem 0;
-      color:var(--main-mainfont-color);
-      margin: 0;
-      text-decoration: none;
-    }
-    .a1:hover {
-     text-decoration: none;
-    color:var(--main-primary-color);
-    }
-    .a2{
-      display: inline-block;
-      padding: .75rem 0;
-      margin: 0;
-      text-decoration: none;
-    }
-    .a2:hover {
-     text-decoration: none;
-     color:var(--main-primary-color);
-    }*/
     .link:hover{
       text-decoration: none;
       color:var(--main-primary-color);
@@ -2285,9 +2265,12 @@ import
       border-radius:20px;
       background-color: #fff;
     }
-    .border{
+    .button1{
       background-color: #fff;
-      border:2px solid #000;
+      color:var(--main-primary-color);
+      border: 2px solid var(--main-primary-color);
+      /* border: 2px solid var(--main-mainfont-color); */
+      /* border: 2px solid ; */
     }
     .btn-1{
             border-radius:20px;
@@ -2325,6 +2308,26 @@ import
       border: 0;
       padding:5px 0;
     }
+    .modalhead{
+      padding:5px;
+    }
+    .modaltop{
+      margin-top:105px;
+    }
+    .logoheader{
+      margin-left:30px;
+    }
+    .login-close{
+      margin-left:25px;
+      }
+      .tabpane{
+        margin-left:45px;
+      }
+      .forgotpwd{
+        float:right;
+        font-size:12px;
+        margin-top:-20px;
+      }
     .borderless td, .borderless td {
        border: none;
     }
@@ -2396,6 +2399,7 @@ import
     color:red;
     font-size:13px;
   }
+
     </style>
 <script>
 function myFunction() {

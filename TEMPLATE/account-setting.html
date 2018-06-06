@@ -193,7 +193,7 @@
 <!-- advanced modal -->
                     <div class="tab-pane fade" id="advanced" role="tabpanel">
                       <div>
-                      <div class="mainfont px-2" style="font-size:13px;margin-top:10px;">
+                      <div class="mainfont px-2" style="font-size:13px;margin-top:13px;">
                         <strong>Active Devices</strong>
                         <div class="" style="margin-left:200px;margin-top:-25px;">
                           <button class="btn btn-1 button1 px-2">View All</button>
@@ -550,9 +550,10 @@ ul li {
   width:auto;
   color:var(--main-primary-color);
 }
+
 .flipswitch {
   position: relative;
-  width:70px;
+  width: 79px;
   -webkit-user-select:none;
   -moz-user-select:none;
   -ms-user-select: none;
@@ -564,7 +565,7 @@ ul li {
   display: block;
   overflow: hidden;
   cursor: pointer;
-  border: 2px solid #45B1CC;
+  border: 2px solid var(--main-primary-color);
   border-radius: 50px;
 }
 .flipswitch-inner {
@@ -579,10 +580,10 @@ ul li {
 .flipswitch-inner:before, .flipswitch-inner:after {
   float: left;
   width: 50%;
-  height: 30px;
+  height: 28px;
   padding: 0;
-  line-height: 30px;
-  font-size:13px;
+  line-height: 28px;
+  font-size: 13px;
   color: white;
   font-family: Trebuchet, Arial, sans-serif;
   font-weight: bold;
@@ -594,25 +595,25 @@ ul li {
   content: "ON";
   padding-left: 12px;
   background-color: #FFFFFF;
-  color: #808080;
+  color:var(--main-mainfont-color);
 }
 .flipswitch-inner:after {
   content: "OFF";
   padding-right: 12px;
-  background-color: #FFFFFF;
-  color: #808080;
+  background-color: #fff;
+  color:var(--main-mainfont-color);
   text-align: right;
 }
 .flipswitch-switch {
-  width: 24px;
-  margin: 3px;
-  background: #45B1CC;
-  border: 2px solid #45B1CC;
+  width: 21px;
+  margin: 3.5px;
+  background:var(--main-primary-color);
+  border: 2px solid var(--main-primary-color);
   border-radius: 50px;
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 56px;
+  right: 50px;
   -webkit-transition: all 0.3s ease-in 0s;
   -moz-transition: all 0.3s ease-in 0s;
   -ms-transition: all 0.3s ease-in 0s;
@@ -625,51 +626,7 @@ ul li {
 .flipswitch-cb:checked + .flipswitch-label .flipswitch-switch {
   right: 0;
 }
-/* .onoffswitch {
-    position: relative; width: 90px;
-    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-}
-.onoffswitch-checkbox {
-    display: none;
-}
-.onoffswitch-label {
-    display: block; overflow: hidden; cursor: pointer;
-    border: 2px solid #999999; border-radius: 20px;
-}
-.onoffswitch-inner {
-    display: block; width: 200%; margin-left: -100%;
-    transition: margin 0.3s ease-in 0s;
-}
-.onoffswitch-inner:before, .onoffswitch-inner:after {
-    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
-    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
-    box-sizing: border-box;
-}
-.onoffswitch-inner:before {
-    content: "ON";
-    padding-left: 10px;
-    background-color: #FFFFFF; color: #515C5C;
-}
-.onoffswitch-inner:after {
-    content: "OFF";
-    padding-right: 10px;
-    background-color: #FFFFFF; color: #999999;
-    text-align: right;
-}
-.onoffswitch-switch {
-    display: none; width:15px; margin: 4px;
-    background: #45B1CC;
-    position: absolute; top: 0; bottom: 0;
-     right: 56px;
-    border: 2px solid #999999; border-radius:25px;
-    transition: all 0.3s ease-in 0s;
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-    margin-left: 0;
-}
-.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-    right: 0px;
-} */
+
 </style>
 <script>
 
