@@ -103,8 +103,8 @@
     <button class="btn btn-1 btn-2" style="border-radius:25px;" data-toggle="modal" data-target="#staff1">
     + Staff1
     </button>
-    <button class="btn btn-1 btn-2" style="border-radius:25px;" data-toggle="modal" data-target="#modal2">
-    + Staff2
+    <button class="btn btn-1 btn-2" style="border-radius:25px;" data-toggle="modal" data-target="#import">
+import
     </button>
     </div>
     </div>
@@ -1901,121 +1901,149 @@
     </div>
 <!-- end add staff modal 1-->
 
-<!-- add staff modal 2 -->
-<div class="modal" id="modal2">
+<!--import modal -->
+ <div class="modal" id="import">
   <div class="modal-dialog modal-md">
     <div class="modal-content modalbg" style="margin-top:105px;">
       <div class="modal-header staffmodal-header" style="padding:10px;">
       <h5 class="col-12 modal-title mainfont" >
-        <strong>Add Staff</strong>
+        <strong>Confirm your import</strong>
       <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:-12px;">
       <span aria-hidden="true">&times;</span>
       </button>
     </h5>
       </div>
-      <div class="modal-header staffmodal-header" style="padding:10px;">
-      <h7 class="col-12 mainfont">
-        <strong>Start adding staff</strong>
-    </h7>
-      </div>
       <div class="modal-body">
-        <div class="col-md-8 offset-md-2">
-            <img src="./image/edit.png">
-            <input class="form-control  input-box px-4 " id="ex2" type="text"  style="margin-top:-38px" placeholder="first and last name">
-        </div>
-        <div class="col-md-8 offset-md-2 mt-4">
-            <img src="./image/user.png">
-            <input class="form-control  input-box px-4 " id="ex2" type="text" style="margin-top:-38px" placeholder="email/mobile number">
-        </div>
-        <div class="mt-3" style="margin-left:250px;">
-        <button class="btn btn-1 border" style="color:var(--main-primary-color);border:2px solid black;margin-right:15px;">Bulk import</button>
-        <button class="btn btn-1 btn-2 ">Add</button>
+        <div class="table-responsive">
+        <table class="table borderless table-hover table-space">
+          <tr>
+            <td>
+              <strong>#</strong>
+            </td>
+            <td colspan="2">
+                <strong>First/Last Name</strong>
+          </td>
+          <td colspan="2">
+            <strong>Email/Mobile Number</strong>
+          </td>
+          </tr>
+          <tr>
+            <td class="primary">
+                01
+            </td>
+            <td  colspan="2" class="mainfont" contenteditable="true" class="mainfont">
+                Devi Natchiyar
+          </td>
+          <td  colspan="2" class="mainfont" contenteditable="true" class="mainfont">
+              devi123@gmail.com
+          </td>
+          <td>
+          <i class="fa fa-check valid"></i>
+     </div>
+          </td>
+          </tr>
+          <tr>
+            <td class="primary">
+              02
+          </td>
+            <td colspan="2" class="mainfont" contenteditable="true" class="mainfont">
+                Siva Kumar
+          </td>
+          <td  colspan="2" class="mainfont" contenteditable="true" class="mainfont">
+              987456157
+          </td>
+          <td>
+            <i class="fa fa-check valid"></i>
+     </td>
+          </tr>
+          <tr>
+            <td class="primary">
+              03
+          </td>
+          <td colspan="2" contenteditable="true" class="mainfont">
+                  Prakash
+          </td>
+          <td colspan="2" contenteditable="true" class="mainfont">
+              prakash@gmail.com
+          </td>
+          <td>
+            <i class="fa fa-check valid"></i>
+          </td>
+          </tr>
+          <tr>
+            <td class="primary">
+              04
+          </td>
+          <td colspan="2" contenteditable="true" class="mainfont">
+              Priya Dharshini
+          </td>
+          <td colspan="2">
+            <input class="errorbox" type="text">
+          </td>
+          <td>
+            <i class="fa fa-close invalid">
+            </i>
+          </td>
+          </tr>
+          <tr>
+            <td class="primary">
+                05
+            </td>
+            <td colspan="2" contenteditable="true" class="mainfont">
+                Amutha
+            </td>
+            <td colspan="2" contenteditable="true" class="mainfont">
+                amutha55@gmail.com
+            </td>
+            <td>
+            <i class="fa fa-check valid"></i>
+       </div>
+     </td>
+          </tr>
+          <tr>
+            <td class="primary">
+                06
+            </td>
+            <td colspan="2" class="mainfont" contenteditable="true" class="mainfont">
+                  Sanjana Sri
+          </td>
+          <td colspan="2" class="mainfont" contenteditable="true" class="mainfont">
+            <input class="errorbox" type="text">
+          </td>
+          <td>
+            <i class="fa fa-close invalid">
+          </i>
+        </td>
+          </tr>
+          <tr>
+            <td class="primary">
+              07
+              </td>
+            <td colspan="2" class="mainfont" contenteditable="true" class="mainfont">
+              Geetha Priya
+            </td>
+            <td colspan="2">
+              <input class="errorbox" type="text" placeholder="89346">
+            </td>
+            <td>
+              <i class="fa fa-close invalid">
+            </i>
+          </td>
+          </tr>
+        </table>
       </div>
-      <div class="staff-list mt-3">
-      <table class="table borderless table-hover table-space">
-        <tr>
-          <td><img src="./image/profile1.png"></td>
-          <td colspan="3">
-          <div >
-            <div class="">
-              <strong>Shivani roy</strong>
-          </div>
-          <div class="mainfont">
-            <span>shivani@gmail.com</span>
-          </div>
-        </div>
-        </td>
-        <td></td>
-          <td>
-            <i aria-hidden="true" class="fa fa-times"></i>
-          </td>
-        </tr>
-        <tr>
-          <td><img src="./image/profile2.png"></td>
-          <td colspan="3">
-          <div >
-            <div class="">
-              <strong>Divakar</strong>
-          </div>
-          <div class="mainfont">
-            <span>diva123@gmail.com</span>
-          </div>
-        </div>
-        </td>
-        <td>
-        </td>
-          <td>
-            <i aria-hidden="true" class="fa fa-times"></i>
-          </td>
-        </tr>
-        <tr>
-          <td><img src="./image/profile3.png"></td>
-          <td colspan="3">
-          <div >
-            <div class="">
-              <strong>Siva ramanan</strong>
-          </div>
-          <div class="mainfont">
-            <span>ramanan@gmail.com</span>
-          </div>
-        </div>
-        </td>
-        <td></td>
-          <td>
-            <i aria-hidden="true" class="fa fa-times"></i>
-          </td>
-        </tr>
-        <tr>
-          <td><img src="./image/profile4.png"></td>
-          <td colspan="3">
-          <div>
-            <div class="">
-              <strong>Ragul Gandhi</strong>
-          </div>
-          <div class="mainfont">
-            <span>ragul997@gmail.com</span>
-          </div>
-        </div>
-        </td>
-        <td></td>
-          <td>
-            <i aria-hidden="true" class="fa fa-times"></i>
-          </td>
-        </tr>
-      </table>
-  </div>
 </div>
       <div class="modal-footer">
-        <div class="d-flex justify-content-end" >
-        <div class="col-6 col-md-6">  <span class="primary">Bulk import how to?</span></div>
-        <button class="btn btn-1 border" style="color:var(--main-primary-color);border:2px solid black;margin-right:15px;">Cancel</button>
-        <button class="btn btn-1 btn-2 px-2">Save</button>
+        <div class="importfooter-content">
+          <p>Please correct the errors/missings to import properly.<br>The items with errors could not be imported.</p>
+          <div class="float-right">
+          <button class="btn btn-1 border" style="color:var(--main-primary-color);border:2px solid black;margin-right:15px;">Cancel</button>
+          <button class="btn btn-1 btn-2 px-2">Import</button>
         </div>
       </div>
+      </div>
     </div>
-  </div>
-</div>
-<!-- end add staff modal 2-->
+<!-- end import modal-->
     </body>
     <style>
     body{
@@ -2353,9 +2381,21 @@
     padding:0 0 0 0px;
       overflow: auto;
   }
-/* .addstaff-content{
-  margin-left:85px;
-} */
+  .errorbox{
+    outline:none;
+    border-color:red;
+    box-shadow:0 0 10px red;
+  }
+  .valid{
+    color:green;
+  }
+  .invalid{
+    color:red;
+  }
+  .importfooter-content{
+    color:red;
+    font-size:13px;
+  }
     </style>
 <script>
 function myFunction() {
