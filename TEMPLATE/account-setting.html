@@ -1,404 +1,424 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-       <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="#">
           <img src="./image/dexter.png" width="50" height="50" alt="Dexter">Dexter Dojo</a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
        </button>
-       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         <ul class="navbar-nav mr-auto">
-         </ul>
-         <form class="form-inline">
-           <a href="#" class="notification-counter float-right px-3" data-counter="51" >
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <form class="form-inline">
+        <a href="#" class="notification-counter float-right px-3" data-counter="51">
                <i class="fa fa-bell-o"></i>
            </a>
-             <div class="inset">
-                 <img src="./image/img1.png">
-               </div>
-               <div class="dropdown px-3">
-                 <button class="btn clr dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="inset">
+          <img src="./image/img1.png">
+        </div>
+        <div class="dropdown px-3">
+          <button class="btn clr dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                    Roselyn
                  </button>
-                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                   <a class="dropdown-item" href="#">Setting</a>
-                   <a class="dropdown-item" href="#">Logout</a>
-                 </div>
-               </div>
-             </form>
-           </div>
-         </nav>
-<!-- end navbar -->
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Setting</a>
+            <a class="dropdown-item" href="#">Logout</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </nav>
+  <!-- end navbar -->
 
-<!-- cover-image -->
-         <div class="container-fluid cover-pic">
-           <div class="row">
-             <div class="col-md-12">
-             </div>
-           </div>
-         </div>
-<!-- end cover-image -->
+  <!-- cover-image -->
+  <div class="container-fluid cover-pic">
+    <div class="row">
+      <div class="col-md-12">
+      </div>
+    </div>
+  </div>
+  <!-- end cover-image -->
 
-<!-- 2nd navbar -->
-<div id="topheader">
-               <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-                 <div class="pro-avatar">
-                   <div class="proavatar">
-                     <a class="proavatar-container" href="" data-resolved-url-large="" data-url="" target="_blank" rel="noopener" data-original-title="">
+  <!-- 2nd navbar -->
+  <div id="topheader">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <div class="pro-avatar">
+        <div class="proavatar">
+          <a class="proavatar-container" href="" data-resolved-url-large="" data-url="" target="_blank" rel="noopener" data-original-title="">
                        <img class="proavatar-image" src="./image/dp.jpg" alt="">
                      </a>
-                   </div>
-                 </div>
-                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                    <span class="navbar-toggler-icon"></span>
                  </button>
-       <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
-              <ul class="nav navbar-nav">
-                <li class="nav-item px-2 " style="font-size:18px;"><a class="nav-link">Stories</a></li>
-                <li class="nav-item px-2 active" style="font-size:18px;"><a class="nav-link">Class</a></li>
-                <li class="nav-item px-2" style="font-size:18px;"><a class="nav-link">Staff</a></li>
-                <li class="nav-item px-2" style="font-size:18px;"><a class="nav-link">Student</a></li>
-                <li class="nav-item px-2" style="font-size:18px;"><a class="nav-link">Event</a></li>
-                 <li class="nav-item px-2" style="font-size:18px;"><a class="nav-link">Message</a></li>
-              </ul>
-           </div>
-           <div class="justify-content-end">
-             <img src="./image/setting.png">
-           </div>
-     </nav>
-</div>
-<!-- 2nd navbar end -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+        <ul class="nav navbar-nav">
+          <li class="nav-item px-2 " style="font-size:18px;"><a class="nav-link">Stories</a></li>
+          <li class="nav-item px-2 active" style="font-size:18px;"><a class="nav-link">Class</a></li>
+          <li class="nav-item px-2" style="font-size:18px;"><a class="nav-link">Staff</a></li>
+          <li class="nav-item px-2" style="font-size:18px;"><a class="nav-link">Student</a></li>
+          <li class="nav-item px-2" style="font-size:18px;"><a class="nav-link">Event</a></li>
+          <li class="nav-item px-2" style="font-size:18px;"><a class="nav-link">Message</a></li>
+        </ul>
+      </div>
+      <div class="justify-content-end">
+        <img src="./image/setting.png">
+      </div>
+    </nav>
+  </div>
+  <!-- 2nd navbar end -->
 
-<!-- row || container -->
+  <!-- row || container -->
   <div class="container">
     <div class="row">
       <div class="col-md-1"></div>
-<!-- buttons -->
-<div class="row">
-<div style="margin-top:85px;">
-    <button class="btn btn-1 btn-2" data-toggle="modal" data-target="#accountsetting">
+      <!-- buttons -->
+      <div class="row">
+        <div style="margin-top:85px;">
+          <button class="btn btn-1 btn-2" data-toggle="modal" data-target="#accountsetting">
   Settings
 </button>
-</div>
-</div>
-</div>
-</div>
-<!-- end buttons -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end buttons -->
 
-<!--account setting modal  -->
-<div class="modal" id="accountsetting">
- <div class="modal-dialog modal-md">
-   <div class="modal-content modalbg" style="margin-top:105px;">
-     <div class="modal-header staffmodal-header" style="padding:10px;">
-     <h7 class="col-12 modal-title mainfont" >
-       <strong>Account setting</strong>
-     <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:-12px;">
+  <!--account setting modal  -->
+  <div class="modal" id="accountsetting">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content modalbg" style="margin-top:105px;">
+        <div class="modal-header staffmodal-header" style="padding:10px;">
+          <h7 class="col-12 modal-title mainfont">
+            <strong>Account setting</strong>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:-12px;">
      <span aria-hidden="true">&times;</span>
      </button>
-   </h7>
-     </div>
-    <!-- side tab pane -->
-              <div class="modal-body" style="padding:0 0 0 0;">
-                <div class="d-flex mt-2">
-                	<ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="navigation">
-                		<li class="nav-item">
-                			<a href="#profile" class="nav-link active" data-toggle="tab" role="tab" aria-controls="profile">Profile</a>
-                		</li>
-                		<li class="nav-item">
-                			<a href="#contact" class="nav-link" data-toggle="tab" role="tab" aria-controls="contact">Contact</a>
-                		</li>
-                		<li class="nav-item">
-                			<a href="#language" class="nav-link" data-toggle="tab" role="tab" aria-controls="language">Language and Region</a>
-                		</li>
-                		<li class="nav-item">
-                			<a href="#advanced" class="nav-link" data-toggle="tab" role="tab" aria-controls="advanced">Advanced</a>
-                		</li>
-                    <li class="nav-item">
-                			<a href="#privacy" class="nav-link" data-toggle="tab" role="tab" aria-controls="privacy">Privacy and Terms</a>
-                		</li>
-                	</ul>
+          </h7>
+        </div>
+        <!-- side tab pane -->
+        <div class="modal-body" style="padding:0 0 0 0;">
+          <div class="d-flex mt-2">
+            <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="navigation">
+              <li class="nav-item">
+                <a href="#profile" class="nav-link active" data-toggle="tab" role="tab" aria-controls="profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link" data-toggle="tab" role="tab" aria-controls="contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="#language" class="nav-link" data-toggle="tab" role="tab" aria-controls="language">Language and Region</a>
+              </li>
+              <li class="nav-item">
+                <a href="#advanced" class="nav-link" data-toggle="tab" role="tab" aria-controls="advanced">Advanced</a>
+              </li>
+              <li class="nav-item">
+                <a href="#privacy" class="nav-link" data-toggle="tab" role="tab" aria-controls="privacy">Privacy and Terms</a>
+              </li>
+            </ul>
 
-<!-- tab content -->
-                  <div class="tab-content">
-<!-- profile modal -->
-                    <div class="tab-pane fade show active" id="profile" role="tabpanel">
-                      <div style="text-align:center;">
-                        <img src="./image/avatar.png">
-                      </div>
-                      <div class="form-group" style="margin-left:20px;">
-                        <label class="mainfont" for="title">Title</label>
-                        <input class="form-control input-box px-4 " id="ex2" type="text" placeholder="Title">
-                      </div>
-                      <div class="form-group" style="margin-left:20px;">
-                        <label class="mainfont" for="name">First/Last Name</label>
-                        <input class="form-control input-box px-4 " id="ex2" type="text" placeholder="Fist and Last name">
-                      </div>
-                      <div class="float-right mt-4">
-                        <button class="btn btn-1 btn-2 px-2">Save</button>
-                      </div>
-                    </div>
-<!-- end profile modal -->
+            <!-- tab content -->
+            <div class="tab-content">
+              <!-- profile modal -->
+              <div class="tab-pane fade show active" id="profile" role="tabpanel">
+                <div style="text-align:center;">
+                  <img src="./image/avatar.png">
+                </div>
+                <div class="form-group" style="margin-left:20px;">
+                  <label class="mainfont" for="title">Title</label>
+                  <input class="form-control input-box px-4 " id="ex2" type="text" placeholder="Title">
+                </div>
+                <div class="form-group" style="margin-left:20px;">
+                  <label class="mainfont" for="name">First/Last Name</label>
+                  <input class="form-control input-box px-4 " id="ex2" type="text" placeholder="Fist and Last name">
+                </div>
+                <div class="float-right mt-4">
+                  <button class="btn btn-1 btn-2 px-2">Save</button>
+                </div>
+              </div>
+              <!-- end profile modal -->
 
-<!-- contact modal -->
-                    <div class="tab-pane fade" id="contact" role="tabpanel">
-                      <div class="form-group" style="margin-left:20px;margin-top:30px;">
-                        <label class="mainfont" for="email">Email</label>
-                        <input class="form-control input-box px-4 emailbox" type="text" placeholder="sanjana@gmail.com" readonly>
-                      </div>
-                      <div class="form-group" style="margin-left:20px;">
-                        <label class="mainfont" for="mobno">Mobile Number</label>
-                        <!-- <div class="form-inline"> -->
-                        <input class="form-control input-box px-4" id="ex2" type="text" placeholder="mobile number">
-                        <!-- <button class="btn btn-1 btn-2 px-2 contact-button">Add</button> -->
-                      </div>
-                      <div class="float-right">
-                            <button class="btn btn-1 btn-2 px-2 contact-button">Add</button>
-                      </div>
-                    </div>
-<!-- end contact modal -->
+              <!-- contact modal -->
+              <div class="tab-pane fade" id="contact" role="tabpanel">
+                <div class="form-group" style="margin-left:20px;margin-top:30px;">
+                  <label class="mainfont" for="email">Email</label>
+                  <input class="form-control input-box px-4 emailbox" type="text" placeholder="sanjana@gmail.com" readonly>
+                </div>
+                <div class="form-group" style="margin-left:20px;">
+                  <label class="mainfont" for="mobno">Mobile Number</label>
+                  <!-- <div class="form-inline"> -->
+                  <input class="form-control input-box px-4" id="ex2" type="text" placeholder="mobile number">
+                  <!-- <button class="btn btn-1 btn-2 px-2 contact-button">Add</button> -->
+                </div>
+                <div class="float-right">
+                  <button class="btn btn-1 btn-2 px-2 contact-button">Add</button>
+                </div>
+              </div>
+              <!-- end contact modal -->
 
-<!-- language modal -->
-                    <div class="tab-pane fade" id="language" role="tabpanel">
-                      <div class="form-group col-md-12" style="margin-left:20px;margin-top:30px;">
-                        <label class="mainfont" for="language">Language</label>
-                        <!-- <input class="form-control input-box px-4 emailbox" type="text" placeholder="sanjana@gmail.com" readonly> -->
-                        <select class="form-control input-box">
+              <!-- language modal -->
+              <div class="tab-pane fade" id="language" role="tabpanel">
+                <div class="form-group col-md-12" style="margin-left:20px;margin-top:30px;">
+                  <label class="mainfont" for="language">Language</label>
+                  <!-- <input class="form-control input-box px-4 emailbox" type="text" placeholder="sanjana@gmail.com" readonly> -->
+                  <select class="form-control input-box">
                             <option value="uk">English(UK)</option>
                         </select>
-                      </div>
-                      <div class="form-group col-md-12" style="margin-left:20px;">
-                        <label class="mainfont" for="time">Time Zone</label>
-                        <select class="form-control input-box">
+                </div>
+                <div class="form-group col-md-12" style="margin-left:20px;">
+                  <label class="mainfont" for="time">Time Zone</label>
+                  <select class="form-control input-box">
                             <option value="asia">Asia/Kolkata</option>
                         </select>
-                      </div>
-                      <div class="float-right mt-4">
-                        <button class="btn btn-1 btn-2 px-2">Save</button>
-                      </div>
-                    </div>
-<!-- end language modal-->
+                </div>
+                <div class="float-right mt-4">
+                  <button class="btn btn-1 btn-2 px-2">Save</button>
+                </div>
+              </div>
+              <!-- end language modal-->
 
-<!-- advanced modal -->
-                    <div class="tab-pane fade" id="advanced" role="tabpanel">
-                      <div>
-                      <div class="mainfont px-2" style="font-size:13px;margin-top:13px;">
-                        <strong>Active Devices</strong>
-                        <div class="" style="margin-left:200px;margin-top:-25px;">
-                          <button class="btn btn-1 button1 px-2">View All</button>
-                        </div>
-                        </div>
-                        <div class="mainfont px-2" style="margin-top:8px;font-size:12px;">
-                          Click 'view all' to see a complete listing of devices
-                          You're currently logged in from.
-                        </div>
-                      </div>
-                      <div>
-                      <div class="mainfont px-2" style="font-size:13px;margin-top:20px;">
-                        <strong>Allow Connection Request</strong>
-                          <!-- <div class="onoffswitch float-right"  style="margin-left:85px;">
+              <!-- advanced modal -->
+              <div class="tab-pane fade" id="advanced" role="tabpanel">
+                <div>
+                  <div class="mainfont px-2" style="font-size:13px;margin-top:13px;">
+                    <strong>Active Devices</strong>
+                    <div class="" style="margin-left:200px;margin-top:-25px;">
+                      <button class="btn btn-1 button1 px-2">View All</button>
+                    </div>
+                  </div>
+                  <div class="mainfont px-2" style="margin-top:8px;font-size:12px;">
+                    Click 'view all' to see a complete listing of devices You're currently logged in from.
+                  </div>
+                </div>
+                <div>
+                  <div class="mainfont px-2" style="font-size:13px;margin-top:20px;">
+                    <strong>Allow Connection Request</strong>
+                    <!-- <div class="onoffswitch float-right"  style="margin-left:85px;">
                             <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
                             <label class="onoffswitch-label" for="myonoffswitch">
                               <span class="onoffswitch-inner"></span>
                               <span class="onoffswitch-switch"></span>
                             </label>
                           </div> -->
-                          <div class="flipswitch" style="margin-left:220px;margin-top:-25px;">
-                            <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>
-                            <label class="flipswitch-label" for="fs">
+                    <div class="flipswitch" style="margin-left:220px;margin-top:-25px;">
+                      <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>
+                      <label class="flipswitch-label" for="fs">
                               <div class="flipswitch-inner"></div>
                               <div class="flipswitch-switch"></div>
                             </label>
-                          </div>
-                        </div>
-                        <div class="mainfont px-2" style="margin-top:8px;font-size:12px;">
-                          You will be requested to join other classes,institutes
-                          which you can either approve or decline.
-                        </div>
-                      </div>
-                      <div>
-                      <div class="mainfont px-2" style="font-size:13px;margin-top:20px;">
-                        <strong>Allow Notifications</strong>
-                          <div class="flipswitch" style="margin-left:220px;margin-top:-25px;">
-                            <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>
-                            <label class="flipswitch-label" for="fs">
-                              <div class="flipswitch-inner"></div>
-                              <div class="flipswitch-switch"></div>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="mainfont px-2" style="margin-top:8px;font-size:12px;">
-                          You will be notified on new stories,chat messages,
-                          connection requests,etc.
-                        </div>
-                      </div>
-                      <div>
-                      <div class="mainfont px-2" style="font-size:13px;margin-top:20px;">
-                        <strong>Allow Email/Mobile Notifications</strong>
-                          <div class="flipswitch" style="margin-left:220px;margin-top:-25px;">
-                            <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>
-                            <label class="flipswitch-label" for="fs">
-                              <div class="flipswitch-inner"></div>
-                              <div class="flipswitch-switch"></div>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="mainfont px-2" style="margin-top:8px;font-size:12px;">
-                          Mails and SMS will be sent to your registered email
-                          and mobile number when you are not online.
-                        </div>
-                      </div>
-                      <div>
-                      <div class="mainfont px-2" style="font-size:13px;margin-top:20px;">
-                        <strong>Delete Your Account</strong>
-                        <div class="" style="margin-left:200px;margin-top:-25px;">
-                          <button class="btn btn-1 button2 px-2">Delete</button>
-                        </div>
-                        </div>
-                        <div class="mainfont px-2" style="margin-top:8px;font-size:12px;">
-                          This will be remove all notification about you,your classes,
-                          and your student.Once deleted,your account can't be
-                        </div>
-                      </div>
                     </div>
-<!-- end advanced modal -->
-
-                    </div>
-<!-- end tab content -->
+                  </div>
+                  <div class="mainfont px-2" style="margin-top:8px;font-size:12px;">
+                    You will be requested to join other classes,institutes which you can either approve or decline.
                   </div>
                 </div>
-              <div class="modal-footer mt-4">
-
+                <div>
+                  <div class="mainfont px-2" style="font-size:13px;margin-top:20px;">
+                    <strong>Allow Notifications</strong>
+                    <div class="flipswitch" style="margin-left:220px;margin-top:-25px;">
+                      <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>
+                      <label class="flipswitch-label" for="fs">
+                              <div class="flipswitch-inner"></div>
+                              <div class="flipswitch-switch"></div>
+                            </label>
+                    </div>
+                  </div>
+                  <div class="mainfont px-2" style="margin-top:8px;font-size:12px;">
+                    You will be notified on new stories,chat messages, connection requests,etc.
+                  </div>
+                </div>
+                <div>
+                  <div class="mainfont px-2" style="font-size:13px;margin-top:20px;">
+                    <strong>Allow Email/Mobile Notifications</strong>
+                    <div class="flipswitch" style="margin-left:220px;margin-top:-25px;">
+                      <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>
+                      <label class="flipswitch-label" for="fs">
+                              <div class="flipswitch-inner"></div>
+                              <div class="flipswitch-switch"></div>
+                            </label>
+                    </div>
+                  </div>
+                  <div class="mainfont px-2" style="margin-top:8px;font-size:12px;">
+                    Mails and SMS will be sent to your registered email and mobile number when you are not online.
+                  </div>
+                </div>
+                <div>
+                  <div class="mainfont px-2" style="font-size:13px;margin-top:20px;">
+                    <strong>Delete Your Account</strong>
+                    <div class="" style="margin-left:200px;margin-top:-25px;">
+                      <button class="btn btn-1 button2 px-2">Delete</button>
+                    </div>
+                  </div>
+                  <div class="mainfont px-2" style="margin-top:8px;font-size:12px;">
+                    This will be remove all notification about you,your classes, and your student.Once deleted,your account can't be
+                  </div>
+                </div>
               </div>
+              <!-- end advanced modal -->
+
             </div>
-            </div>
+            <!-- end tab content -->
           </div>
-        </body>
+        </div>
+        <div class="modal-footer mt-4">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 <style>
-body{
-font-family:sans-serif;
-background-color:	#F0EFEC;
-}
-@media screen and (max-width:600px) {
-  .modal-md{
+  body {
+    font-family: sans-serif;
+    background-color: #F0EFEC;
+  }
+
+  @media screen and (max-width:600px) {
+    .modal-md {
       /* margin-left:5px;
       margin-right:5px; */
-      margin:5px 5px 5px 5px;
+      margin: 5px 5px 5px 5px;
     }
-}
-:root{
-  --main-primary-color:#45b1cc;
-  --main-mainfont-color:#b3b3b3;
-  --main-font-color:#e6e6e6;
-}
-input::placeholder {
-text-align: center;
-}
-/* option{
+  }
+
+  :root {
+    --main-primary-color: #45b1cc;
+    --main-mainfont-color: #b3b3b3;
+    --main-font-color: #e6e6e6;
+  }
+
+  input::placeholder {
+    text-align: center;
+  }
+
+  /* option{
 text-align: center;
 } */
-input{
-  text-align:center;
-}
-.input-box{
-    border-radius:20px;
-}
-.login-modal{
-  margin-left:30px;
-  margin-top:20px;
-}
-.selection-icon{
-text-align: center;
-padding: 5rem 5rem 2rem;
-}
-#dropdown-image-add-class .list-inline {
-      padding: 2rem 1rem;
-}
-.list-inline {
+
+  input {
+    text-align: center;
+  }
+
+  .input-box {
+    border-radius: 20px;
+  }
+
+  .login-modal {
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  .selection-icon {
+    text-align: center;
+    padding: 5rem 5rem 2rem;
+  }
+
+  #dropdown-image-add-class .list-inline {
+    padding: 2rem 1rem;
+  }
+
+  .list-inline {
     padding-left: 0;
     list-style: none;
     margin-left: -5px;
   }
-#dropdown-image-add-class {
-    max-height:15rem;
+
+  #dropdown-image-add-class {
+    max-height: 15rem;
     max-width: 45rem;
     border-radius: 5px;
     overflow-y: auto;
     overflow-x: hidden;
-  /*  left: auto !important;*/
-}
-.dropdown-btn{
-  background-color:#f2f2f2ff;
-  padding:0 0 0 0;
-}
-#ex2::-webkit-input-placeholder{
-  color:var(--main-font-color);
-}
-#ex3::-webkit-input-placeholder{
-  color:#000000ff;
-}
-.dropdown-img{
-  padding:2rem 2rem;
-}
-.mainfont{
-  color:var(--main-mainfont-color);
-}
-.font{
-  color:var(--main-font-color);
-}
-.cover-pic{
-background:url('./image/cover.jpg') no-repeat 50% 0;
-background-size:100% auto;
-height:250px;
+    /*  left: auto !important;*/
   }
-.primary{
-  color:var(--main-primary-color);
-}
-.notification-bell
-{
-  font-size:27px;
-}
-.notification-counter {
-  position: relative;
-  font-size:2em;
-  color: #333;
-  transition: all .2s ease-in-out;
-}
-.notification-counter[data-counter]:after {
-  content: attr(data-counter);
-  position: absolute;
-  top: 4px;
-  left: 50%;
-  font-size: .4em;
-  font-weight: bold;
-  background:var(--main-primary-color);
-  color: #fff;
-  text-align: center;
-  border-radius:50%;
-  padding: 3px 5px;
-}
-#topheader .navbar-nav li > a:hover, #topheader .navbar-nav li > a:focus {
-  cursor:pointer;
-  color:var(--main-primary-color);
-}
 
-#topheader .navbar-nav li.active > a {
-  color:var(--main-primary-color);
-  cursor:pointer;
-}
+  .dropdown-btn {
+    background-color: #f2f2f2ff;
+    padding: 0 0 0 0;
+  }
 
-.inset img {
+  #ex2::-webkit-input-placeholder {
+    color: var(--main-font-color);
+  }
+
+  #ex3::-webkit-input-placeholder {
+    color: #000000ff;
+  }
+
+  .dropdown-img {
+    padding: 2rem 2rem;
+  }
+
+  .mainfont {
+    color: var(--main-mainfont-color);
+  }
+
+  .font {
+    color: var(--main-font-color);
+  }
+
+  .cover-pic {
+    background: url('./image/cover.jpg') no-repeat 50% 0;
+    background-size: 100% auto;
+    height: 250px;
+  }
+
+  .primary {
+    color: var(--main-primary-color);
+  }
+
+  .notification-bell {
+    font-size: 27px;
+  }
+
+  .notification-counter {
+    position: relative;
+    font-size: 2em;
+    color: #333;
+    transition: all .2s ease-in-out;
+  }
+
+  .notification-counter[data-counter]:after {
+    content: attr(data-counter);
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    font-size: .4em;
+    font-weight: bold;
+    background: var(--main-primary-color);
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    padding: 3px 5px;
+  }
+
+  #topheader .navbar-nav li>a:hover,
+  #topheader .navbar-nav li>a:focus {
+    cursor: pointer;
+    color: var(--main-primary-color);
+  }
+
+  #topheader .navbar-nav li.active>a {
+    color: var(--main-primary-color);
+    cursor: pointer;
+  }
+
+  .inset img {
     -webkit-background-size: 32px 32px;
     background-size: 32px 32px;
     -webkit-border-radius: 50%;
@@ -410,10 +430,10 @@ height:250px;
     height: 39px;
     width: 39px;
     z-index: 0;
-    cursor:pointer;
-}
-div.nav-bar a
-{
+    cursor: pointer;
+  }
+
+  div.nav-bar a {
     color: #FFF;
     text-decoration: none;
     font: 20px;
@@ -422,29 +442,35 @@ div.nav-bar a
     position: relative;
     z-index: 0;
     cursor: pointer;
-}
-.pro-avatar {
+  }
+
+  .pro-avatar {
     bottom: -28px;
-    left:150px;
+    left: 150px;
     position: absolute;
     transition: bottom .3s;
     z-index: 3;
-}
+  }
+
   .proavatar {
     background: #fff;
     border: 5px solid #fff;
     border-radius: 25%;
-    height:165px;
+    height: 165px;
     position: relative;
-    width:165px;
-}
-.proavatar-container {
+    width: 165px;
+  }
+
+  .proavatar-container {
     outline: 0;
-}
-.u-block {
-    display: block!important;
-}
-.proavatar-image, .proavatar-placeholderImage {
+  }
+
+  .u-block {
+    display: block !important;
+  }
+
+  .proavatar-image,
+  .proavatar-placeholderImage {
     -moz-force-broken-image-icon: 1;
     border-radius: 25%;
     height: 100%;
@@ -452,183 +478,210 @@ div.nav-bar a
     position: absolute;
     top: 0;
     width: 100%;
-}
-.modal-header{
-  margin-left:22px;
-  margin-right:20px;
-}
-.header{
-  margin-top:-40px;
-}
-.footer-1{
-  border:none;
-  margin-top:25px;
-}
-.footer-2{
-padding-top:0.5rem;
-padding-bottom:0rem;
-}
-.modalbg{
-  border-radius:20px;
-  box-shadow: 0 0 30px #000;
-}
-.modal-backdrop {
-  position: fixed;
+  }
+
+  .modal-header {
+    margin-left: 22px;
+    margin-right: 20px;
+  }
+
+  .header {
+    margin-top: -40px;
+  }
+
+  .footer-1 {
+    border: none;
+    margin-top: 25px;
+  }
+
+  .footer-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
+  }
+
+  .modalbg {
+    border-radius: 20px;
+    box-shadow: 0 0 30px #000;
+  }
+
+  .modal-backdrop {
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 1030;
-    background-color:var(--main-primary-color);
-    opacity:0.1;
-}
-ul li {
-  display: inline;
-  text-align: center;
-}
-.link:hover{
-  text-decoration: none;
-  color:var(--main-primary-color);
-}
-.button1{
-  background-color: #fff;
-  color:var(--main-primary-color);
-  border: 2px solid var(--main-primary-color);
-}
-.button2{
-  background-color: #fff;
-  color:red;
-  border: 2px solid red;
-}
-.btn-1{
-        border-radius:20px;
-        width:95px;
-        padding:3px;
-        margin: auto;
-}
-.btn-2{
-  background-color:var(--main-primary-color);
-  color:#fff;
-}
-.nav-tabs--vertical {
-  margin-top:-9px;
-  border-right: 1px solid #ddd;
-  border-bottom: none;
-  /* display: flex; */
-  flex-flow: column nowrap;
-}
+    background-color: var(--main-primary-color);
+    opacity: 0.1;
+  }
 
-.nav-tabs--left .nav-link {
-  background-color:  #f7f7f7;
-  text-align: left;
-  border-bottom: none;
-  color:var(--main-mainfont-color);
-  padding:15px 20px 4px 5px;
-  white-space: nowrap;
-}
-.nav-tabs--left .nav-link.active {
-  border-bottom-color: #ddd;
-  border-right-color: #fff;
-  color:var(--main-mainfont-color);
-  border-bottom-left-radius: 0.25rem;
-  border-top-right-radius: 0;
-  border-right: 1px solid #ddd;
-  margin-right: -1px;
-}
-.nav-tabs--left .nav-link.active:hover {
-  background-color: #fff;
+  ul li {
+    display: inline;
+    text-align: center;
+  }
+
+  .link:hover {
+    text-decoration: none;
+    color: var(--main-primary-color);
+  }
+
+  .button1 {
+    background-color: #fff;
+    color: var(--main-primary-color);
+    border: 2px solid var(--main-primary-color);
+  }
+
+  .button2 {
+    background-color: #fff;
+    color: red;
+    border: 2px solid red;
+  }
+
+  .btn-1 {
+    border-radius: 20px;
+    width: 95px;
+    padding: 3px;
+    margin: auto;
+  }
+
+  .btn-2 {
+    background-color: var(--main-primary-color);
+    color: #fff;
+  }
+
+  .nav-tabs--vertical {
+    margin-top: -9px;
     border-right: 1px solid #ddd;
-}
-.modal-footer{
-  border:none;
-}
-.emailbox{
-  background-color: #ccccccff;
-}
-.contact-button{
-  background-color:#fff;
-  width:auto;
-  color:var(--main-primary-color);
-}
+    border-bottom: none;
+    /* display: flex; */
+    flex-flow: column nowrap;
+  }
 
-.flipswitch {
-  position: relative;
-  width: 79px;
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select: none;
-}
-.flipswitch input[type=checkbox] {
-  display: none;
-}
-.flipswitch-label {
-  display: block;
-  overflow: hidden;
-  cursor: pointer;
-  border: 2px solid var(--main-primary-color);
-  border-radius: 50px;
-}
-.flipswitch-inner {
-  width: 200%;
-  margin-left: -100%;
-  -webkit-transition: margin 0.3s ease-in 0s;
-  -moz-transition: margin 0.3s ease-in 0s;
-  -ms-transition: margin 0.3s ease-in 0s;
-  -o-transition: margin 0.3s ease-in 0s;
-  transition: margin 0.3s ease-in 0s;
-}
-.flipswitch-inner:before, .flipswitch-inner:after {
-  float: left;
-  width: 50%;
-  height: 28px;
-  padding: 0;
-  line-height: 28px;
-  font-size: 13px;
-  color: white;
-  font-family: Trebuchet, Arial, sans-serif;
-  font-weight: bold;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.flipswitch-inner:before {
-  content: "ON";
-  padding-left: 12px;
-  background-color: #FFFFFF;
-  color:var(--main-mainfont-color);
-}
-.flipswitch-inner:after {
-  content: "OFF";
-  padding-right: 12px;
-  background-color: #fff;
-  color:var(--main-mainfont-color);
-  text-align: right;
-}
-.flipswitch-switch {
-  width: 21px;
-  margin: 3.5px;
-  background:var(--main-primary-color);
-  border: 2px solid var(--main-primary-color);
-  border-radius: 50px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 50px;
-  -webkit-transition: all 0.3s ease-in 0s;
-  -moz-transition: all 0.3s ease-in 0s;
-  -ms-transition: all 0.3s ease-in 0s;
-  -o-transition: all 0.3s ease-in 0s;
-  transition: all 0.3s ease-in 0s;
-}
-.flipswitch-cb:checked + .flipswitch-label .flipswitch-inner {
-  margin-left: 0;
-}
-.flipswitch-cb:checked + .flipswitch-label .flipswitch-switch {
-  right: 0;
-}
+  .nav-tabs--left .nav-link {
+    background-color: #f7f7f7;
+    text-align: left;
+    border-bottom: none;
+    color: var(--main-mainfont-color);
+    padding: 15px 20px 4px 5px;
+    white-space: nowrap;
+  }
 
+  .nav-tabs--left .nav-link.active {
+    border-bottom-color: #ddd;
+    border-right-color: #fff;
+    color: var(--main-mainfont-color);
+    border-bottom-left-radius: 0.25rem;
+    border-top-right-radius: 0;
+    border-right: 1px solid #ddd;
+    margin-right: -1px;
+  }
+
+  .nav-tabs--left .nav-link.active:hover {
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+  }
+
+  .modal-footer {
+    border: none;
+  }
+
+  .emailbox {
+    background-color: #ccccccff;
+  }
+
+  .contact-button {
+    background-color: #fff;
+    width: auto;
+    color: var(--main-primary-color);
+  }
+
+  .flipswitch {
+    position: relative;
+    width: 79px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .flipswitch input[type=checkbox] {
+    display: none;
+  }
+
+  .flipswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid var(--main-primary-color);
+    border-radius: 50px;
+  }
+
+  .flipswitch-inner {
+    width: 200%;
+    margin-left: -100%;
+    -webkit-transition: margin 0.3s ease-in 0s;
+    -moz-transition: margin 0.3s ease-in 0s;
+    -ms-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s;
+    transition: margin 0.3s ease-in 0s;
+  }
+
+  .flipswitch-inner:before,
+  .flipswitch-inner:after {
+    float: left;
+    width: 50%;
+    height: 28px;
+    padding: 0;
+    line-height: 28px;
+    font-size: 13px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .flipswitch-inner:before {
+    content: "ON";
+    padding-left: 12px;
+    background-color: #FFFFFF;
+    color: var(--main-mainfont-color);
+  }
+
+  .flipswitch-inner:after {
+    content: "OFF";
+    padding-right: 12px;
+    background-color: #fff;
+    color: var(--main-mainfont-color);
+    text-align: right;
+  }
+
+  .flipswitch-switch {
+    width: 21px;
+    margin: 3.5px;
+    background: var(--main-primary-color);
+    border: 2px solid var(--main-primary-color);
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50px;
+    -webkit-transition: all 0.3s ease-in 0s;
+    -moz-transition: all 0.3s ease-in 0s;
+    -ms-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s;
+  }
+
+  .flipswitch-cb:checked+.flipswitch-label .flipswitch-inner {
+    margin-left: 0;
+  }
+
+  .flipswitch-cb:checked+.flipswitch-label .flipswitch-switch {
+    right: 0;
+  }
 </style>
 <script>
-
 </script>
+
 </html>

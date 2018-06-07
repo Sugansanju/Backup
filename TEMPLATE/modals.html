@@ -136,7 +136,7 @@ import
                           </li>
 
                           </ul>
-                            <hr style="margin-top:-2px;margin-right:20px;margin-left:-12px;">
+                            <!-- <hr style="margin-top:-2px;margin-right:20px;margin-left:-12px;"> -->
     <!-- end nav tabs-->
 
     <!-- login modal -->
@@ -156,7 +156,7 @@ import
                             </a>
                         </div>
                 <div class="modal-footer login-footer">
-                      <div class="float-rightt">
+                      <div class="float-right">
                         <button class="btn btn-1 button1">Cancel</button>
                         <button class="btn btn-1 btn-2 px-2">Login</button>
                       </div>
@@ -167,7 +167,7 @@ import
 
     <!-- signup modal -->
     <div role="tabbable-line" id="signup" class="container tab-pane fade">
-      <div style="margin-left:30px;margin-top:20px;">
+      <div class="login-modal">
      <div class="col-md-10">
       <img src="./image/user.png">
       <input class="form-control  input-box px-4 " id="ex2" type="text"  placeholder="email/mobile number">
@@ -177,14 +177,14 @@ import
       <input class="form-control  input-box  px-4 " id="ex2" type="password"  placeholder="password">
     </div>
     </div>
-    <div class="modal-footer login-footer">
-      <div class="float-rightt" >
+    <div class="modal-footer signup-footer">
+      <div class="float-right">
         <button class="btn btn-1 button1">Cancel</button>
         <button class="btn btn-1 btn-2 px-2">Login</button>
-      </div>
     </div>
+  </div>
     <hr class="d-flex justify-content-center" style="margin-right:55px;">
-      <p class="mainfont text-center" style="font-size:12px;">By signing up you agree to our
+      <p class="mainfont signup-instruction">By signing up you agree to our
       <br><span class="primary">"Terms of Policy,Privacy agreement"</span></p>
     </div>
     </div>
@@ -200,9 +200,9 @@ import
       <div class="modal-dialog modal-md">
         <div class="modal-content modalbg modaltop">
           <div class="modal-header modalhead">
-          <h3 class="col-12 modal-title text-center" style="margin-left:30px;">
+          <h3 class="col-12 modal-title  logoheader">
           <img src="./image/logo.png">
-          <button type="button" class="close loginclose" data-dismiss="modal" aria-label="Close" style="">
+          <button type="button" class="close loginclose" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
           </button>
           </h3>
@@ -214,14 +214,14 @@ import
                   <a class="nav-link active mainfont" data-toggle="tab" href="#account">Account Details</a>
               </li>
               </ul>
-              <hr style="margin-top:-2px;margin-right:48px;margin-left:-5px;">
+              <!-- <hr style="margin-top:-2px;margin-right:48px;margin-left:-5px;"> -->
 
               <div class="tab-content">
                 <div role="tabbable-line" id="login" class="container tab-pane active">
-                  <div style="text-align:center;">
+                  <div class="text-center">
                   <img src="./image/avatar.png">
                 </div>
-          <div style="margin-left:30px;margin-top:20px;">
+          <div class="login-modal">
                 <div class="col-md-10">
                     <img src="./image/edit.png">
                     <input class="form-control  input-box px-4 " id="ex2" type="text"   placeholder="first and last name">
@@ -231,10 +231,8 @@ import
                     <input class="form-control  input-box px-4 " id="ex2" type="text"  placeholder="first and last name">
                 </div>
         <div class="modal-footer login-footer">
-              <div class="float-right" >
                 <button class="btn btn-1 button1">Skip</button>
                 <button class="btn btn-1 btn-2 px-2">Update</button>
-              </div>
         </div>
       </div>
     </div>
@@ -251,9 +249,9 @@ import
       <div class="modal-dialog modal-md">
         <div class="modal-content modalbg" style="margin-top:105px">
           <div class="modal-header modalhead">
-          <h3 class="col-12 modal-title text-center" style="margin-left:30px;">
+          <h3 class="col-12 modal-title  logoheader">
           <img src="./image/logo.png">
-          <button type="button" class="close login-close" data-dismiss="modal" aria-label="Close" style="">
+          <button type="button" class="close login-close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
           </button>
           </h3>
@@ -265,19 +263,17 @@ import
                       <a class="nav-link active mainfont" data-toggle="tab" href="#login">Verify OTP</a>
                   </li>
                   </ul>
-                  <hr style="margin-top:-2px;margin-right:48px;margin-left:-5px;">
+                  <!-- <hr style="margin-top:-2px;margin-right:48px;margin-left:-5px;"> -->
                   <div class="tab-content">
                     <div role="tabbable-line" id="login" class="container tab-pane active">
-              <div style="margin-left:30px;margin-top:20px;">
+              <div class="login-modal">
                     <div class="col-md-10">
                         <img src="./image/otp.png">
                         <input class="form-control  input-box px-4 " id="ex2" type="text"  placeholder="* * * * * *">
                     </div>
             <div class="modal-footer login-footer">
-                  <div class="float-right" >
                     <button class="btn btn-1 button1">Resend</button>
                     <button class="btn btn-1 btn-2 px-2">Verify</button>
-                  </div>
             </div>
           </div>
         </div>
@@ -287,35 +283,20 @@ import
     </div>
     </div>
     </div>
-    </div>
-    </div>
+
     <!-- end otp verify -->
 
     <!-- class|parent|student|teacher modal -->
-
-    <!-- <div class="modal" id="subject">
-      <div class="modal-dialog modal-md">
-        <div class="modal-content modalbg modaltop">
-          <div>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:12px;margin-right:10px;">
-            <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-header">
-          <h3 class="col-12 text-center mainfont" style="margin-left:30px;font-size:15px;">
-          Demo class
-          </h3>
-        </div> -->
         <div class="modal" id="subject">
           <div class="modal-dialog modal-md">
             <div class="modal-content modalbg modaltop">
               <div>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:12px;margin-right:10px;">
+                <button type="button" class="close classmodal-close" data-dismiss="modal" aria-label="Close" style="">
                 <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-header header">
-              <h3 class="col-12 modal-title text-center mainfont" style="font-size:15px;">
+              <h3 class="col-12 modal-title mainfont classmodal-header">
                   Demo class
               </h3>
               </div>
@@ -342,119 +323,119 @@ import
     <!-- add class modal -->
     <div class="tab-content">
       <div role="tabbable-line" id="addclass" class="container tab-pane active">
-          <div style="margin-top:-20px;">
+          <div class="classmodal">
             <div class="dropdown selection-icon">
-              <button type="button" class="btn dropdown-btn-color" data-toggle="dropdown" style="background-color:#f2f2f2ff;">
+              <button type="button" class="btn dropdownbtn" data-toggle="dropdown">
                 <img src="./image/physics.png">
                 <span class="dropdown-toggle">
                 </span>
               </button>
               <ul id="dropdown-image-add-class" aria-labelledby="dropdownMenu1" class="dropdown-menu">
-                <ul class="list-inline">
-                  <li class="px-2">
+                <ul class="class-list">
+                  <li >
                     <a>
-                      <img src="./image/physics.png" style="margin:3px;">
+                      <img class="list-picture" src="./image/physics.png">
                     </a>
                   </li>
-                  <li class="px-2">
+                  <li >
                     <a>
-                      <img src="./image/maths.png" style="margin:3px;">
+                      <img  class="list-picture" src="./image/maths.png">
                     </a>
                   </li>
-                  <li class="px-2">
+                  <li >
                     <a>
-                      <img src="./image/che.png" style="margin:3px;">
+                      <img  class="list-picture"  src="./image/che.png">
                     </a>
                   </li>
-                  <li class="px-2">
+                  <li >
                     <a>
-                      <img src="./image/physics.png" style="margin:3px;">
+                      <img  class="list-picture"  src="./image/physics.png" >
                     </a>
                   </li>
-                  <li class="px-2">
+                  <li>
                     <a>
-                      <img src="./image/maths.png" style="margin:3px;">
+                      <img  class="list-picture"  src="./image/maths.png">
                     </a>
                   </li>
-                  <li class="px-2">
+                  <li >
                     <a>
-                      <img src="./image/che.png" style="margin:3px;">
+                      <img  class="list-picture" src="./image/che.png" >
                     </a>
                   </li>
-                  <li class="px-2">
+                  <li >
                     <a>
-                      <img src="./image/physics.png" style="margin:3px;">
+                      <img  class="list-picture" src="./image/physics.png">
                     </a>
                   </li>
-                  <li class="px-2">
+                  <li >
                     <a>
-                      <img src="./image/maths.png" style="margin:3px;">
+                      <img  class="list-picture" src="./image/maths.png">
                     </a>
                   </li>
-                  <li class="px-2">
+                  <li >
                     <a>
-                      <img src="./image/che.png" style="margin:3px;">
+                      <img  class="list-picture" src="./image/che.png" >
                     </a>
                   </li>
-                  <li class=" px-2">
+                  <li>
                     <a>
-                      <img src="./image/physics.png" style="margin:3px;">
+                      <img  class="list-picture"  src="./image/physics.png" >
                     </a>
                   </li>
-                  <li class=" px-2">
+                  <li>
                     <a>
-                      <img src="./image/maths.png" style="margin:3px;">
+                      <img  class="list-picture" src="./image/maths.png">
                     </a>
                   </li>
-                  <li class=" px-2">
+                  <li>
                     <a>
-                      <img src="./image/che.png" style="margin:3px;">
+                      <img  class="list-picture" src="./image/che.png">
                     </a>
                   </li>
-                  <li class=" px-2">
+                  <li>
                     <a>
-                      <img src="./image/physics.png" style="margin:3px;">
+                      <img class="list-picture" src="./image/physics.png" >
                     </a>
                   </li>
-                  <li class="px-2">
+                  <li >
                     <a>
-                      <img src="./image/maths.png" style="margin:3px;">
+                      <img class="list-picture" src="./image/maths.png" >
                     </a>
                   </li>
-                  <li class=" px-2">
+                  <li>
                     <a>
-                      <img src="./image/che.png" style="margin:3px;"style="margin:3px;"style="margin:3px;"style="margin:3px;">
+                      <img class="list-picture" src="./image/che.png">
                     </a>
                   </li>
-                  <li class=" px-2">
+                  <li>
                     <a>
-                      <img src="./image/physics.png"style="margin:3px;"style="margin:3px;"style="margin:3px;" >
+                      <img class="list-picture" src="./image/physics.png" >
                     </a>
                   </li>
-                  <li class="px-2">
+                  <li >
                     <a>
-                      <img src="./image/maths.png"style="margin:3px;"style="margin:3px;" >
+                      <img class="list-picture" src="./image/maths.png">
                     </a>
                   </li>
-                  <li class="px-2">
+                  <li >
                     <a>
-                      <img src="./image/che.png"style="margin:3px;" >
+                      <img class="list-picture" src="./image/che.png">
                     </a>
                   </li>
                 </ul>
               </ul>
             </div>
-            <div style="margin-left:10px;margin-top:20px;">
+            <div class="classmodal-content">
               <div class="row">
                 <label class="mainfont col-md-4" for="classname">Class Name</label>
-                <div class="col-md-6" style="margin-right:20px;">
-                  <input class="form-control" id="ex3" type="text" style="border-radius:20px;" placeholder="Physics Paper I">
+                <div class="col-md-6 classmodal-inputfield">
+                  <input class="form-control classmodal-dropdown" id="ex3" type="text"  placeholder="Physics Paper I">
                 </div>
               </div>
               <div class="row mt-4">
                 <label class="mainfont col-md-4" for="year">Year</label>
                 <div class="col-md-6">
-          <select class="form-control" style="border-radius:20px;">
+          <select class="form-control classmodal-dropdown">
               <option value="year2">Year 2</option>
               <option value="year2">Year 3</option>
               <option value="year2">Year 2</option>
@@ -483,7 +464,7 @@ import
             </div>
             <div class="col-1 col-md-1">
             </div>
-           <div class="col-8 col-md-8 primary"  style="margin-top:5px;font-size:18px;" >
+           <div class="col-8 col-md-8 primary studentmodal">
                 <b>Add Students</b>
            </div>
        </div>
@@ -494,10 +475,10 @@ import
          <div class="col-1 col-md-1">
          </div>
          <div class="col-8 col-md-8">
-           <div style="font-size:16px;">
+           <div class="username-font">
              <b>Divya Dharshini</b>
            </div>
-           <div class="mainfont" style="font-size:13px;">
+           <div class="mainfont usersubname-font">
              divya@gmail.com
            </div>
          </div>
@@ -509,10 +490,10 @@ import
          <div class="col-1 col-md-1">
          </div>
          <div class="col-8 col-md-8">
-           <div style="font-size:16px;">
+           <div class="username-font">
              <b>Mellina</b>
            </div>
-           <div class="mainfont" style="font-size:13px;">
+           <div class="mainfont usersubname-font">
              8956741230
            </div>
          </div>
@@ -524,10 +505,10 @@ import
          <div class="col-1 col-md-1">
          </div>
          <div class="col-8 col-md-8">
-           <div style="font-size:16px;">
+           <div class="username-font">
              <b>Shivani Roy</b>
            </div>
-           <div class="mainfont" style="font-size:13px;">
+           <div class="mainfont usersubname-font">
              roy1234@gmail.com
            </div>
          </div>
@@ -539,10 +520,10 @@ import
          <div class="col-1 col-md-1">
          </div>
          <div class="col-8 col-md-8">
-           <div style="font-size:16px;">
+           <div class="username-font">
              <b>Ragul Gandhi</b>
            </div>
-           <div class="mainfont" style="font-size:13px;">
+           <div class="mainfont usersubname-font">
              8956741230
            </div>
          </div>
@@ -554,10 +535,10 @@ import
          <div class="col-1 col-md-1">
          </div>
          <div class="col-8 col-md-8">
-           <div style="font-size:16px;">
+           <div class="username-font">
              <b>Divakar</b>
            </div>
-           <div class="mainfont" style="font-size:13px;">
+           <div class="mainfont usersubname-font">
              8974562312
            </div>
          </div>
@@ -569,10 +550,10 @@ import
          <div class="col-1 col-md-1">
          </div>
          <div class="col-8 col-md-8">
-           <div style="font-size:16px;">
+           <div class="username-font">
              <b>Siva Raman</b>
            </div>
-           <div class="mainfont" style="font-size:13px;">
+           <div class="mainfont usersubname-font">
              siva20@gmail.com
            </div>
          </div>
@@ -584,19 +565,17 @@ import
          <div class="col-1 col-md-1">
          </div>
          <div class="col-8 col-md-8">
-           <div style="font-size:16px;">
+           <div class="username-font">
              <b>Siva Raman</b>
            </div>
-           <div class="mainfont" style="font-size:13px;">
+           <div class="mainfont usersubname-font">
              siva20@gmail.com
            </div>
          </div>
        </div>
     </div>
-    <div class="modal-footer footer-2">
-    <div class="float-right" >
+    <div class="modal-footer classmodal-footer">
       <button class="btn btn-1 btn-2 px-2">Close</button>
-    </div>
     </div>
     </div>
     <!-- end add student modal -->
@@ -605,21 +584,21 @@ import
     <div role="tabbable-line" id="parent" class="container tab-pane fade">
     <div class="modal-body student-list">
       <div class="col-md-12">
-      <div class="table-responsive">
+      <div class="">
       <table class="table borderless table-hover table-space">
     <tbody>
       <!-- 1st row -->
       <tr>
-        <td>
+        <td class="parentprofile-padding">
           <div>
              <img src="./image/profile1.png">
            </div>
          </td>
         <td colspan="2">
-          <div style="font-size:15px;">
+          <div class="username-font">
           <b>Shivani roy</b>
         </div>
-        <div class="mainfont" style="font-size:13px;">
+        <div class="mainfont usersubname-font">
           3 parents connected
         </div>
       </td>
@@ -629,70 +608,76 @@ import
       </td>
         <td colspan="2">
           <div class="dropdown">
-             <button type="button dropdown-toggle" class="btn dropdown-btn" data-toggle="dropdown">
+             <button type="button dropdown-toggle" class="btn dropdownbtn" data-toggle="dropdown">
                <div class="row">
                  <div class="col-1 col-md-1">
                    <img src="./image/ava1.png">
                  </div>
                  <div class="col-5 col-md-5 px-4">
-                   <div style="font-size:15px;">
+                   <div class="username-font">
                      <b>Ravi Kumar</b>
                    </div>
-                   <div class="mainfont" style="font-size:13px;">
+                   <div class="mainfont usersubname-font">
                      ravikumar@gmail.com
                    </div>
                  </div>
-                 <div class="col" style="margin-left:5px;">
+                 <div class="col parentmodal-downarrow">
                    <img src="./image/arrow.png">
                  </div>
              </div>
            </button>
       <ul id="dropdown-student-add-parent" class="dropdown-menu">
-               <ul class="list-inline1">
+               <ul class="parent-list">
                  <div class="row mt-3">
+                   <div class="col-1 col-md-1">
+                   </div>
                    <div class="col-1 col-md-1">
                      <img src="./image/profile1.png">
                    </div>
                    <div class="col-1 col-md-1">
                    </div>
                    <div class="col-8 col-md-8">
-                     <div style="font-size:15px;">
+                     <div class="username-font">
                        <b>Divya Dharshini</b>
                      </div>
                      <div class="col-1 col-md-1">
 
                      </div>
-                     <div class="mainfont" style="font-size:13px;">
+                     <div class="mainfont usersubname-font">
                        3 parents connected
                      </div>
                    </div>
                  </div>
                  <div class="row mt-3">
                    <div class="col-1 col-md-1">
+                   </div>
+                   <div class="col-1 col-md-1">
                      <img src="./image/profile3.png">
                    </div>
                    <div class="col-1 col-md-1">
                    </div>
                    <div class="col-8 col-md-8">
-                     <div style="font-size:16px;">
+                     <div class="username-font">
                        <b>Siva Raman</b>
                      </div>
-                     <div class="mainfont" style="font-size:13px;">
+                     <div class="mainfont usersubname-font">
                        siva20@gmail.com
                      </div>
                    </div>
                  </div>
                  <div class="row mt-3">
                    <div class="col-1 col-md-1">
+                   </div>
+                   <div class="col-1 col-md-1">
                      <img src="./image/profile1.png">
                    </div>
                    <div class="col-1 col-md-1">
                    </div>
                    <div class="col-8 col-md-8">
-                     <div style="font-size:16px;">
+                     <div class="username-font">
                        <b>Divakar</b>
                      </div>
-                     <div class="mainfont" style="font-size:13px;">
+                     <div class="mainfont usersubname-font">
                        8974562312
                      </div>
                    </div>
@@ -705,16 +690,16 @@ import
 
     <!-- 2nd row -->
            <tr>
-             <td>
+             <td class="parentprofile-padding">
                <div>
                   <img src="./image/profile2.png">
                 </div>
               </td>
              <td colspan="2">
-               <div style="font-size:15px;">
+               <div class="username-font">
                <b>Divakar</b>
              </div>
-             <div class="mainfont" style="font-size:13px;">
+             <div class="mainfont usersubname-font">
                1 parents connected
              </div>
            </td>
@@ -724,37 +709,39 @@ import
            </td>
              <td colspan="2">
                <div class="dropdown">
-                  <button type="button dropdown-toggle" class="btn dropdown-btn" data-toggle="dropdown">
+                  <button type="button dropdown-toggle" class="btn dropdownbtn" data-toggle="dropdown">
                     <div class="row">
                       <div class="col-1 col-md-1">
                         <img src="./image/ava2.png">
                       </div>
                       <div class="col-5 col-md-5 px-4">
-                        <div style="font-size:15px;">
+                        <div class="username-font">
                           <b>Roselyn J</b>
                         </div>
-                        <div class="mainfont" style="font-size:13px;">
+                        <div class="mainfont usersubname-font">
                           rose123@gmail.com
                         </div>
                       </div>
-                      <div class="col" style="margin-left:5px;">
+                      <div class="col parentmodal-downarrow">
                         <img src="./image/arrow.png">
                       </div>
                   </div>
                 </button>
            <ul id="dropdown-student-add-parent" class="dropdown-menu">
-                    <ul class="list-inline1">
+                    <ul class="parent-list">
                       <div class="row mt-3">
+                        <div class="col-1 col-md-1">
+                        </div>
                         <div class="col-1 col-md-1">
                           <img src="./image/profile1.png">
                         </div>
                         <div class="col-1 col-md-1">
                         </div>
                         <div class="col-8 col-md-8">
-                          <div style="font-size:16px;">
+                          <div class="username-font">
                             <b>Divakar</b>
                           </div>
-                          <div class="mainfont" style="font-size:13px;">
+                          <div class="mainfont usersubname-font">
                             8974562312
                           </div>
                         </div>
@@ -767,16 +754,16 @@ import
 
     <!-- 3rd row -->
                 <tr>
-                  <td>
+                  <td class="parentprofile-padding">
                     <div>
                        <img src="./image/profile3.png">
                      </div>
                    </td>
                   <td colspan="2">
-                    <div style="font-size:15px;">
+                    <div class="username-font">
                     <b>Siva Ramanan</b>
                   </div>
-                  <div class="mainfont" style="font-size:13px;">
+                  <div class="mainfont usersubname-font">
                     1 parents connected
                   </div>
                 </td>
@@ -786,39 +773,41 @@ import
                 </td>
                   <td colspan="2">
                     <div class="dropdown">
-                       <button type="button dropdown-toggle" class="btn dropdown-btn" data-toggle="dropdown">
+                       <button type="button dropdown-toggle" class="btn dropdownbtn" data-toggle="dropdown">
                          <div class="row">
                            <div class="col-1 col-md-1">
                              <img src="./image/ava3.png">
                            </div>
                            <div class="col-5 col-md-5 px-4">
-                             <div style="font-size:15px;">
+                             <div class="username-font">
                                <b>Snowlin B</b>
                              </div>
-                             <div class="mainfont" style="font-size:13px;">
+                             <div class="mainfont usersubname-font">
                             snowlin@gmail.com
                              </div>
                            </div>
-                           <div class="col" style="margin-left:5px;">
+                           <div class="col parentmodal-downarrow">
                              <img src="./image/arrow.png">
                            </div>
                        </div>
                      </button>
                 <ul id="dropdown-student-add-parent" class="dropdown-menu">
-                         <ul class="list-inline1">
+                         <ul class="parent-list">
                            <div class="row mt-3">
+                             <div class="col-1 col-md-1">
+                             </div>
                              <div class="col-1 col-md-1">
                                <img src="./image/profile1.png">
                              </div>
                              <div class="col-1 col-md-1">
                              </div>
                              <div class="col-8 col-md-8">
-                               <div style="font-size:15px;">
+                               <div class="username-font">
                                  <b>Sivani roy</b>
                                </div>
                                <div class="col-1 col-md-1">
                                </div>
-                               <div class="mainfont" style="font-size:13px;">
+                               <div class="mainfont usersubname-font">
                                  3 parents connected
                                </div>
                              </div>
@@ -831,16 +820,16 @@ import
 
     <!-- 4th row -->
                      <tr>
-                       <td>
+                       <td class="parentprofile-padding">
                          <div>
                             <img src="./image/profile2.png">
                           </div>
                         </td>
                        <td colspan="2">
-                         <div style="font-size:15px;">
+                         <div class="username-font">
                          <b>Ragul</b>
                        </div>
-                       <div class="mainfont" style="font-size:13px;">
+                       <div class="mainfont usersubname-font">
                          2 parents connected
                        </div>
                      </td>
@@ -850,52 +839,56 @@ import
                      </td>
                        <td colspan="2">
                          <div class="dropdown">
-                           <button type="button dropdown-toggle" class="btn dropdown-btn" data-toggle="dropdown">
+                           <button type="button dropdown-toggle" class="btn dropdownbtn" data-toggle="dropdown">
                              <div class="row">
                                <div class="col-1 col-md-1">
                                  <img src="./image/ava2.png">
                                </div>
                                <div class="col-5 col-md-5 px-4">
-                                 <div style="font-size:15px;">
+                                 <div class="username-font">
                                    <b>Roselyn J</b>
                                  </div>
-                                 <div class="mainfont" style="font-size:13px;">
+                                 <div class="mainfont usersubname-font">
                                    rose123@gmail.com
                                  </div>
                                </div>
-                               <div class="col" style="margin-left:5px;">
+                               <div class="col parentmodal-downarrow">
                                  <img src="./image/arrow.png">
                                </div>
                            </div>
                          </button>
                      <ul id="dropdown-student-add-parent" class="dropdown-menu">
-                              <ul class="list-inline1">
+                              <ul class="parent-list">
                                 <div class="row mt-3">
+                                  <div class="col-1 col-md-1">
+                                  </div>
                                   <div class="col-1 col-md-1">
                                     <img src="./image/profile3.png">
                                   </div>
                                   <div class="col-1 col-md-1">
                                   </div>
                                   <div class="col-8 col-md-8">
-                                    <div style="font-size:16px;">
+                                    <div class="username-font">
                                       <b>Siva Raman</b>
                                     </div>
-                                    <div class="mainfont" style="font-size:13px;">
+                                    <div class="mainfont usersubname-font">
                                       siva20@gmail.com
                                     </div>
                                   </div>
                                 </div>
                                 <div class="row mt-3">
                                   <div class="col-1 col-md-1">
+                                  </div>
+                                  <div class="col-1 col-md-1">
                                     <img src="./image/profile1.png">
                                   </div>
                                   <div class="col-1 col-md-1">
                                   </div>
                                   <div class="col-8 col-md-8">
-                                    <div style="font-size:16px;">
+                                    <div class="username-font">
                                       <b>Divakar</b>
                                     </div>
-                                    <div class="mainfont" style="font-size:13px;">
+                                    <div class="mainfont usersubname-font">
                                       8974562312
                                     </div>
                                   </div>
@@ -908,16 +901,16 @@ import
 
     <!-- 5th row -->
                          <tr>
-                            <td>
+                            <td class="parentprofile-padding">
                               <div>
                                  <img src="./image/profile4.png">
                                </div>
                              </td>
                             <td colspan="2">
-                              <div style="font-size:15px;">
+                              <div class="username-font">
                               <b>Harish</b>
                             </div>
-                            <div class="mainfont" style="font-size:13px;">
+                            <div class="mainfont usersubname-font">
                               1 parents connected
                             </div>
                           </td>
@@ -927,38 +920,39 @@ import
                           </td>
                             <td colspan="2">
                               <div class="dropdown">
-                                 <button type="button dropdown-toggle" class="btn dropdown-btn" data-toggle="dropdown">
+                                 <button type="button dropdown-toggle" class="btn dropdownbtn" data-toggle="dropdown">
                                    <div class="row">
                                      <div class="col-1 col-md-1">
                                        <img src="./image/ava3.png">
                                      </div>
                                      <div class="col-5 col-md-5 px-4">
-                                       <div style="font-size:15px;">
+                                       <div class="username-font">
                                          <b>Snowlin B</b>
                                        </div>
-                                       <div class="mainfont" style="font-size:13px;">
+                                       <div class="mainfont usersubname-font">
                                         snowlin@gmail.com
                                        </div>
                                      </div>
-                                     <div class="col" style="margin-left:5px;">
+                                     <div class="col parentmodal-downarrow">
                                        <img src="./image/arrow.png">
                                      </div>
                                  </div>
                                </button>
                           <ul id="dropdown-student-add-parent" class="dropdown-menu">
-                                   <ul class="list-inline1">
-
+                                   <ul class="parent-list">
                                      <div class="row mt-3">
+                                       <div class="col-1 col-md-1">
+                                       </div>
                                        <div class="col-1 col-md-1">
                                          <img src="./image/profile3.png">
                                        </div>
                                        <div class="col-1 col-md-1">
                                        </div>
                                        <div class="col-8 col-md-8">
-                                         <div style="font-size:16px;">
+                                         <div class="username-font">
                                            <b>Siva Raman</b>
                                          </div>
-                                         <div class="mainfont" style="font-size:13px;">
+                                         <div class="mainfont usersubname-font">
                                            siva20@gmail.com
                                          </div>
                                        </div>
@@ -971,16 +965,16 @@ import
 
     <!-- 6th row -->
                                <tr>
-                                 <td>
+                                 <td class="parentprofile-padding">
                                    <div>
                                       <img src="./image/profile3.png">
                                     </div>
                                   </td>
                                  <td colspan="2">
-                                   <div style="font-size:15px;">
+                                   <div class="username-font">
                                    <b>Divya</b>
                                  </div>
-                                 <div class="mainfont" style="font-size:13px;">
+                                 <div class="mainfont usersubname-font">
                                    0 parents connected
                                  </div>
                                </td>
@@ -988,668 +982,16 @@ import
                                    <img src="./image/rightarrow.png">
                                  </div>
                                </td>
-                                 <!-- <td colspan="2">
-                                   <div class="dropdown">
-                                      <button type="button dropdown-toggle" class="btn dropdown-btn" data-toggle="dropdown">
-                                        <div class="row">
-                                          <div class="col-1 col-md-1">
-                                            <img src="./image/ava1.png">
-                                          </div>
-                                          <div class="col-5 col-md-5 px-4">
-                                            <div style="font-size:15px;">
-                                              <b>Ravi Kumar</b>
-                                            </div>
-                                            <div class="mainfont" style="font-size:13px;">
-                                              ravikumar@gmail.com
-                                            </div>
-                                          </div>
-                                          <div class="col" style="margin-left:5px;">
-                                            <img src="./image/arrow.png">
-                                          </div>
-                                      </div>
-                                    </button>
-                               <ul id="dropdown-student-add-parent" class="dropdown-menu">
-                                        <ul class="list-inline1">
-                                          <div class="row mt-3">
-                                            <div class="col-1 col-md-1">
-                                              <img src="./image/profile1.png">
-                                            </div>
-                                            <div class="col-1 col-md-1">
-                                            </div>
-                                            <div class="col-8 col-md-8">
-                                              <div style="font-size:15px;">
-                                                <b>Divya Dharshini</b>
-                                              </div>
-                                              <div class="col-1 col-md-1">
-
-                                              </div>
-                                              <div class="mainfont" style="font-size:13px;">
-                                                3 parents connected
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="row mt-3">
-                                            <div class="col-1 col-md-1">
-                                              <img src="./image/profile3.png">
-                                            </div>
-                                            <div class="col-1 col-md-1">
-                                            </div>
-                                            <div class="col-8 col-md-8">
-                                              <div style="font-size:16px;">
-                                                <b>Siva Raman</b>
-                                              </div>
-                                              <div class="mainfont" style="font-size:13px;">
-                                                siva20@gmail.com
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="row mt-3">
-                                            <div class="col-1 col-md-1">
-                                              <img src="./image/profile1.png">
-                                            </div>
-                                            <div class="col-1 col-md-1">
-                                            </div>
-                                            <div class="col-8 col-md-8">
-                                              <div style="font-size:16px;">
-                                                <b>Divakar</b>
-                                              </div>
-                                              <div class="mainfont" style="font-size:13px;">
-                                                8974562312
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </ul>
-                                      </div>
-                                      </td> -->
-                                    </tr>
+            </tr>
     <!-- end 6th row -->
     </tbody>
     </table>
     </div>
     </div>
-      <!-- 1st row -->
-       <!-- <div class="row mt-3">
-         <div class="col-1 col-md-1">
-           <img src="./image/profile1.png">
-         </div>
-         <div class="col-1 col-md-1">
-         </div>
-         <div class="col-5 col-md-5 student-detail">
-           <div style="font-size:15px;">
-             <b>Divya Dharshini</b>
-           </div>
-           <div class="mainfont" style="font-size:13px;">
-             3 parents connected
-           </div>
-         </div>
-         <div class="col-1 col-md-1" style="margin-left:-75px;">
-           <img src="./image/rightarrow.png">
-         </div>
-         <div class="dropdown" style="margin-top:-6px;margin-left:-10px;">
-             <button type="button dropdown-toggle" class="btn dropdown-btn" data-toggle="dropdown">
-               <div class="row">
-                 <div class="col-1 col-md-1">
-                   <img src="./image/ava1.png">
-                 </div>
-                 <div class="col-5 col-md-5 px-4">
-                   <div style="font-size:15px;">
-                     <b>Ravi Kumar</b>
-                   </div>
-                   <div class="mainfont" style="font-size:13px;">
-                     ravikumar@gmail.com
-                   </div>
-                 </div>
-                 <div class="col" style="margin-left:5px;">
-                   <img src="./image/arrow.png">
-                 </div>
-             </div>
-             </button>
-             <ul id="dropdown-student-add-parent" class="dropdown-menu">
-               <ul class="list-inline1">
-                 <div class="row mt-3">
-                   <div class="col-1 col-md-1">
-                     <img src="./image/profile1.png">
-                   </div>
-                   <div class="col-1 col-md-1">
-                   </div>
-                   <div class="col-8 col-md-8">
-                     <div style="font-size:15px;">
-                       <b>Divya Dharshini</b>
-                     </div>
-                     <div class="col-1 col-md-1">
-
-                     </div>
-                     <div class="mainfont" style="font-size:13px;">
-                       3 parents connected
-                     </div>
-                   </div>
-                 </div>
-                 <div class="row mt-3">
-                   <div class="col-1 col-md-1">
-                     <img src="./image/profile3.png">
-                   </div>
-                   <div class="col-1 col-md-1">
-                   </div>
-                   <div class="col-8 col-md-8">
-                     <div style="font-size:16px;">
-                       <b>Siva Raman</b>
-                     </div>
-                     <div class="mainfont" style="font-size:13px;">
-                       siva20@gmail.com
-                     </div>
-                   </div>
-                 </div>
-                 <div class="row mt-3">
-                   <div class="col-1 col-md-1">
-                     <img src="./image/profile1.png">
-                   </div>
-                   <div class="col-1 col-md-1">
-                   </div>
-                   <div class="col-8 col-md-8">
-                     <div style="font-size:16px;">
-                       <b>Divakar</b>
-                     </div>
-                     <div class="mainfont" style="font-size:13px;">
-                       8974562312
-                     </div>
-                   </div>
-                 </div>
-               </ul>
-             </div>
-     </div> -->
-     <!-- end 1st row -->
-
-     <!-- 2nd row -->
-       <!-- <div class="row mt-3">
-         <div class="col-1 col-md-1">
-           <img src="./image/profile2.png">
-         </div>
-         <div class="col-1 col-md-1">
-         </div>
-         <div class="col-5 col-md-5 student-detail">
-           <div style="font-size:15px;">
-             <b>Mellina</b>
-           </div>
-           <div class="mainfont" style="font-size:13px;">
-              2 parents connected
-           </div>
-         </div>
-         <div class="col-1 col-md-1" style="margin-left:-75px;">
-    <img src="./image/rightarrow.png">
-         </div>
-         <div class="dropdown" style="margin-top:-6px;margin-left:-10px;">
-             <button type="button dropdown-toggle" class="btn dropdown-btn" data-toggle="dropdown">
-               <div class="row">
-                 <div class="col-1 col-md-1">
-                   <img src="./image/ava3.png">
-                 </div>
-                 <div class="col-5 col-md-5 px-4">
-                   <div style="font-size:15px;">
-                     <b>Snowlin B</b>
-                   </div>
-                   <div class="mainfont" style="font-size:13px;">
-                     snow234@gmail.com
-                   </div>
-                 </div>
-                 <div class="" style="margin-left:5px;">
-                   <img src="./image/arrow.png">
-                 </div>
-             </div>
-
-             </button>
-             <ul id="dropdown-student-add-parent" class="dropdown-menu">
-               <ul class="list-inline1">
-                 <div class="row mt-3">
-                   <div class="col-1 col-md-1">
-                     <img src="./image/profile1.png">
-                   </div>
-                   <div class="col-1 col-md-1">
-                   </div>
-                   <div class="col-8 col-md-8">
-                     <div style="font-size:15px;">
-                       <b>Divya Dharshini</b>
-                     </div>
-                     <div class="col-1 col-md-1">
-
-                     </div>
-                     <div class="mainfont" style="font-size:13px;">
-                       3 parents connected
-                     </div>
-                   </div>
-                 </div>
-                 <div class="row mt-3">
-                   <div class="col-1 col-md-1">
-                     <img src="./image/profile3.png">
-                   </div>
-                   <div class="col-1 col-md-1">
-                   </div>
-                   <div class="col-8 col-md-8">
-                     <div style="font-size:16px;">
-                       <b>Siva Raman</b>
-                     </div>
-                     <div class="mainfont" style="font-size:13px;">
-                       siva20@gmail.com
-                     </div>
-                   </div>
-                 </div>
-                 <div class="row mt-3">
-                   <div class="col-1 col-md-1">
-                     <img src="./image/profile1.png">
-                   </div>
-                   <div class="col-1 col-md-1">
-                   </div>
-                   <div class="col-8 col-md-8">
-                     <div style="font-size:16px;">
-                       <b>Divakar</b>
-                     </div>
-                     <div class="mainfont" style="font-size:13px;">
-                       8974562312
-                     </div>
-                   </div>
-                 </div>
-               </ul>
-             </div>
-       </div> -->
-       <!-- end 2nd row -->
-
-       <!-- 3rd row -->
-       <!-- <div class="row mt-3">
-         <div class="col-1 col-md-1 ">
-           <img src="./image/profile3.png">
-         </div>
-         <div class="col-1 col-md-1">
-         </div>
-         <div class="col-5 col-md-5 student-detail">
-           <div style="font-size:15px;">
-             <b>Shivani Roy</b>
-           </div>
-           <div class="mainfont" style="font-size:13px;">
-               3 parents connected
-           </div>
-         </div>
-         <div class="col-1 col-md-1" style="margin-left:-75px;">
-    <img src="./image/rightarrow.png">
-         </div>
-         <div class="dropdown" style="margin-top:-6px;margin-left:-10px;">
-             <button type="button dropdown-toggle" class="btn dropdown-btn" data-toggle="dropdown">
-               <div class="row">
-                 <div class="col-1 col-md-1">
-                   <img src="./image/ava2.png">
-                 </div>
-                 <div class="col-5 col-md-5 px-4">
-                   <div style="font-size:15px;">
-                     <b>Roselyn J</b>
-                   </div>
-                   <div class="mainfont" style="font-size:13px;">
-                     rose@gmail.com
-                   </div>
-                 </div>
-                 <div class="" style="margin-left:5px;">
-                   <img src="./image/arrow.png">
-                 </div>
-             </div>
-
-             </button>
-             <ul id="dropdown-student-add-parent" class="dropdown-menu">
-               <ul class="list-inline1">
-                 <div class="row mt-3">
-                   <div class="col-1 col-md-1">
-                     <img src="./image/profile1.png">
-                   </div>
-                   <div class="col-1 col-md-1">
-                   </div>
-                   <div class="col-8 col-md-8">
-                     <div style="font-size:15px;">
-                       <b>Divya Dharshini</b>
-                     </div>
-                     <div class="col-1 col-md-1">
-
-                     </div>
-                     <div class="mainfont" style="font-size:13px;">
-                       3 parents connected
-                     </div>
-                   </div>
-                 </div>
-                 <div class="row mt-3">
-                   <div class="col-1 col-md-1">
-                     <img src="./image/profile3.png">
-                   </div>
-                   <div class="col-1 col-md-1">
-                   </div>
-                   <div class="col-8 col-md-8">
-                     <div style="font-size:16px;">
-                       <b>Siva Raman</b>
-                     </div>
-                     <div class="mainfont" style="font-size:13px;">
-                       siva20@gmail.com
-                     </div>
-                   </div>
-                 </div>
-                 <div class="row mt-3">
-                   <div class="col-1 col-md-1">
-                     <img src="./image/profile1.png">
-                   </div>
-                   <div class="col-1 col-md-1">
-                   </div>
-                   <div class="col-8 col-md-8">
-                     <div style="font-size:16px;">
-                       <b>Divakar</b>
-                     </div>
-                     <div class="mainfont" style="font-size:13px;">
-                       8974562312
-                     </div>
-                   </div>
-                 </div>
-               </ul>
-             </div>
-     </div> -->
-     <!-- end 3rd row -->
-
-     <!-- 4th row -->
-       <!-- <div class="row mt-3">
-         <div class="col-1 col-md-1">
-           <img src="./image/profile4.png">
-         </div>
-         <div class="col-1 col-md-1">
-         </div>
-         <div class="col-5 col-md-5 student-detail">
-           <div style="font-size:15px;">
-             <b>Ragul Gandhi</b>
-           </div>
-           <div class="mainfont" style="font-size:13px;">
-               2 parents connected
-           </div>
-         </div>
-         <div class="col-1 col-md-1" style="margin-left:-75px;">
-    <img src="./image/rightarrow.png">
-         </div>
-         <div class="dropdown" style="margin-top:-6px;margin-left:-10px;">
-             <button type="button dropdown-toggle" class="btn dropdown-btn" data-toggle="dropdown">
-               <div class="row">
-                 <div class="col-1 col-md-1">
-                   <img src="./image/ava1.png">
-                 </div>
-                 <div class="col-5 col-md-5 px-4">
-                   <div style="font-size:15px;">
-                     <b>Ravi Kumar</b>
-                   </div>
-                   <div class="mainfont" style="font-size:13px;">
-                     ravikumar@gmail.com
-                   </div>
-                 </div>
-                 <div class="" style="margin-left:5px;">
-                   <img src="./image/arrow.png">
-                 </div>
-             </div>
-
-             </button>
-             <ul id="dropdown-student-add-parent" class="dropdown-menu">
-               <ul class="list-inline1">
-                 <div class="row mt-3">
-                   <div class="col-1 col-md-1">
-                     <img src="./image/profile1.png">
-                   </div>
-                   <div class="col-1 col-md-1">
-                   </div>
-                   <div class="col-8 col-md-8">
-                     <div style="font-size:15px;">
-                       <b>Divya Dharshini</b>
-                     </div>
-                     <div class="col-1 col-md-1">
-
-                     </div>
-                     <div class="mainfont" style="font-size:13px;">
-                       3 parents connected
-                     </div>
-                   </div>
-                 </div>
-                 <div class="row mt-3">
-                   <div class="col-1 col-md-1">
-                     <img src="./image/profile3.png">
-                   </div>
-                   <div class="col-1 col-md-1">
-                   </div>
-                   <div class="col-8 col-md-8">
-                     <div style="font-size:16px;">
-                       <b>Siva Raman</b>
-                     </div>
-                     <div class="mainfont" style="font-size:13px;">
-                       siva20@gmail.com
-                     </div>
-                   </div>
-                 </div>
-                 <div class="row mt-3">
-                   <div class="col-1 col-md-1">
-                     <img src="./image/profile1.png">
-                   </div>
-                   <div class="col-1 col-md-1">
-                   </div>
-                   <div class="col-8 col-md-8">
-                     <div style="font-size:16px;">
-                       <b>Divakar</b>
-                     </div>
-                     <div class="mainfont" style="font-size:13px;">
-                       8974562312
-                     </div>
-                   </div>
-                 </div>
-               </ul>
-             </div>
-     </div> -->
-     <!-- end 4th row -->
-
-     <!-- 5th row -->
-       <!-- <div class="row mt-3">
-         <div class="col-1 col-md-1">
-           <img src="./image/profile1.png">
-         </div>
-         <div class="col-1 col-md-1">
-         </div>
-         <div class="col-5 col-md-5 student-detail">
-           <div style="font-size:15px;">
-             <b>Divakar</b>
-           </div>
-           <div class="mainfont" style="font-size:13px;">
-              1 parents connected
-           </div>
-         </div>
-         <div class="col-1 col-md-1" style="margin-left:-75px;">
-    <img src="./image/rightarrow.png">
-         </div>
-         <div class="dropdown" style="margin-top:-6px;margin-left:-10px;">
-             <button type="button dropdown-toggle" class="btn dropdown-btn" data-toggle="dropdown">
-               <div class="row">
-                 <div class="col-1 col-md-1">
-                   <img src="./image/ava3.png">
-                 </div>
-                 <div class="col-5 col-md-5 px-4">
-                   <div style="font-size:15px;">
-                     <b>Snowlin B</b>
-                   </div>
-                   <div class="mainfont" style="font-size:13px;">
-                     rsnow231@gmail.com
-                   </div>
-                 </div>
-                 <div class="" style="margin-left:5px;">
-                   <img src="./image/arrow.png">
-                 </div>
-             </div>
-
-             </button>
-             <ul id="dropdown-student-add-parent" class="dropdown-menu">
-               <ul class="list-inline1">
-                 <div class="row mt-3">
-                   <div class="col-1 col-md-1">
-                     <img src="./image/profile1.png">
-                   </div>
-                   <div class="col-1 col-md-1">
-                   </div>
-                   <div class="col-8 col-md-8">
-                     <div style="font-size:15px;">
-                       <b>Divya Dharshini</b>
-                     </div>
-                     <div class="col-1 col-md-1">
-
-                     </div>
-                     <div class="mainfont" style="font-size:13px;">
-                       3 parents connected
-                     </div>
-                   </div>
-                 </div>
-                 <div class="row mt-3">
-                   <div class="col-1 col-md-1">
-                     <img src="./image/profile3.png">
-                   </div>
-                   <div class="col-1 col-md-1">
-                   </div>
-                   <div class="col-8 col-md-8">
-                     <div style="font-size:16px;">
-                       <b>Siva Raman</b>
-                     </div>
-                     <div class="mainfont" style="font-size:13px;">
-                       siva20@gmail.com
-                     </div>
-                   </div>
-                 </div>
-                 <div class="row mt-3">
-                   <div class="col-1 col-md-1">
-                     <img src="./image/profile1.png">
-                   </div>
-                   <div class="col-1 col-md-1">
-                   </div>
-                   <div class="col-8 col-md-8">
-                     <div style="font-size:16px;">
-                       <b>Divakar</b>
-                     </div>
-                     <div class="mainfont" style="font-size:13px;">
-                       8974562312
-                     </div>
-                   </div>
-                 </div>
-               </ul>
-             </div>
-     </div> -->
-     <!-- end 5th row -->
-
-     <!-- 6th row -->
-       <!-- <div class="row mt-3">
-         <div class="col-1 col-md-1">
-           <img src="./image/profile2.png">
-         </div>
-         <div class="col-1 col-md-1">
-         </div>
-         <div class="col-5 col-md-5 student-detail">
-           <div style="font-size:15px;">
-             <b>Siva Raman</b>
-           </div>
-           <div class="mainfont" style="font-size:13px;">
-               3 parents connected
-           </div>
-         </div>
-         <div class="col-1 col-md-1" style="margin-left:-75px;">
-    <img src="./image/rightarrow.png">
-         </div>
-         <div class="dropdown" style="margin-top:-6px;margin-left:-10px;">
-             <button type="button dropdown-toggle" class="btn dropdown-btn" data-toggle="dropdown">
-               <div class="row">
-                 <div class="col-1 col-md-1">
-                   <img src="./image/ava2.png">
-                 </div>
-                 <div class="col-5 col-md-5 px-4">
-                   <div style="font-size:15px;">
-                     <b>Roselyn J</b>
-                   </div>
-                   <div class="mainfont" style="font-size:13px;">
-                     rose@gmail.com
-                   </div>
-                 </div>
-                 <div class="" style="margin-left:5px;">
-                   <img src="./image/arrow.png">
-                 </div>
-             </div>
-
-             </button>
-             <ul id="dropdown-student-add-parent" class="dropdown-menu">
-               <ul class="list-inline1">
-                 <div class="row mt-3">
-                   <div class="col-1 col-md-1">
-                     <img src="./image/profile1.png">
-                   </div>
-                   <div class="col-1 col-md-1">
-                   </div>
-                   <div class="col-8 col-md-8">
-                     <div style="font-size:15px;">
-                       <b>Divya Dharshini</b>
-                     </div>
-                     <div class="col-1 col-md-1">
-
-                     </div>
-                     <div class="mainfont" style="font-size:13px;">
-                       3 parents connected
-                     </div>
-                   </div>
-                 </div>
-                 <div class="row mt-3">
-                   <div class="col-1 col-md-1">
-                     <img src="./image/profile3.png">
-                   </div>
-                   <div class="col-1 col-md-1">
-                   </div>
-                   <div class="col-8 col-md-8">
-                     <div style="font-size:16px;">
-                       <b>Siva Raman</b>
-                     </div>
-                     <div class="mainfont" style="font-size:13px;">
-                       siva20@gmail.com
-                     </div>
-                   </div>
-                 </div>
-                 <div class="row mt-3">
-                   <div class="col-1 col-md-1">
-                     <img src="./image/profile1.png">
-                   </div>
-                   <div class="col-1 col-md-1">
-                   </div>
-                   <div class="col-8 col-md-8">
-                     <div style="font-size:16px;">
-                       <b>Divakar</b>
-                     </div>
-                     <div class="mainfont" style="font-size:13px;">
-                       8974562312
-                     </div>
-                   </div>
-                 </div>
-               </ul>
-             </div>
-     </div> -->
-    <!-- end 6th row -->
-
-    <!-- 7th row -->
-       <!-- <div class="row mt-3">
-         <div class="col-1 col-md-1">
-           <img src="./image/profile3.png">
-         </div>
-         <div class="col-1 col-md-1">
-         </div>
-         <div class="col-5 col-md-5 student-detail">
-           <div style="font-size:15px;">
-             <b>Siva Raman</b>
-           </div>
-           <div class="mainfont" style="font-size:13px;">
-              0 parents connected
-           </div>
-         </div>
-         <div class="col-1 col-md-1" style="margin-left:-75px;">
-    <img src="./image/rightarrow.png">
-         </div>
-     </div> -->
-     <!-- end 7th row -->
     </div>
     <!-- end body -->
-    <div class="modal-footer footer-2">
-    <div class="float-right" >
+    <div class="modal-footer classmodal-footer">
       <button class="btn btn-1 btn-2 px-2">Close</button>
-    </div>
     </div>
     <!-- end footer -->
     </div>
@@ -1664,7 +1006,7 @@ import
             </div>
             <div class="col-1 col-md-1">
             </div>
-           <div class="col-8 col-md-8 primary"  style="margin-top:5px;font-size:18px;" >
+           <div class="col-8 col-md-8 primary teacher-modal" >
                 <b>Add Co-Teacher</b>
            </div>
        </div>
@@ -1675,10 +1017,10 @@ import
          <div class="col-1 col-md-1">
          </div>
          <div class="col-8 col-md-8">
-           <div style="font-size:16px;">
+           <div class="username-font">
              <b>Ravi Kumar</b>
            </div>
-           <div class="mainfont" style="font-size:13px;">
+           <div class="mainfont usersubname-font">
             ravikumar@gmail.com
            </div>
          </div>
@@ -1690,10 +1032,10 @@ import
          <div class="col-1 col-md-1">
          </div>
          <div class="col-8 col-md-8">
-           <div style="font-size:16px;">
+           <div class="username-font">
              <b>Roselyn J</b>
            </div>
-           <div class="mainfont" style="font-size:13px;">
+           <div class="mainfont usersubname-font">
              roselynj@gmail.com
            </div>
          </div>
@@ -1705,10 +1047,10 @@ import
          <div class="col-1 col-md-1">
          </div>
          <div class="col-8 col-md-8">
-           <div style="font-size:16px;">
+           <div class="username-font">
              <b>Showlin B</b>
            </div>
-           <div class="mainfont" style="font-size:13px;">
+           <div class="mainfont usersubname-font">
              showb@gmail.com
            </div>
          </div>
@@ -1720,10 +1062,10 @@ import
          <div class="col-1 col-md-1">
          </div>
          <div class="col-8 col-md-8">
-           <div style="font-size:16px;">
+           <div class="username-font">
              <b>Roselyn J</b>
            </div>
-           <div class="mainfont" style="font-size:13px;">
+           <div class="mainfont usersubname-font" >
              roselynj@gmail.com
            </div>
          </div>
@@ -1735,10 +1077,10 @@ import
          <div class="col-1 col-md-1">
          </div>
          <div class="col-8 col-md-8">
-           <div style="font-size:16px;">
+           <div class="username-font">
              <b>Showlin B</b>
            </div>
-           <div class="mainfont" style="font-size:13px;">
+           <div class="mainfont usersubname-font">
              showb@gmail.com
            </div>
          </div>
@@ -1750,19 +1092,17 @@ import
          <div class="col-1 col-md-1">
          </div>
          <div class="col-8 col-md-8">
-           <div style="font-size:16px;">
+           <div class="username-font">
              <b>Ravi Kumar</b>
            </div>
-           <div class="mainfont" style="font-size:13px;">
+           <div class="mainfont usersubname-font">
             ravikumar@gmail.com
            </div>
          </div>
        </div>
     </div>
-    <div class="modal-footer footer-2">
-    <div class="float-right" >
+    <div class="modal-footer classmodal-footer">
       <button class="btn btn-1 btn-2 px-2">Close</button>
-    </div>
     </div>
     </div>
     <!-- end addteacher modal -->
@@ -1783,10 +1123,10 @@ import
     <div class="modal" id="staff1">
       <div class="modal-dialog modal-md">
         <div class="modal-content modalbg modaltop">
-          <div class="modal-header staffmodal-header" style="padding:10px;">
+          <div class="modal-header staffmodal-header">
           <h5 class="col-12 modal-title mainfont" >
             <strong>Add Staff</strong>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:-12px;">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
           </button>
         </h5>
@@ -1795,15 +1135,15 @@ import
               <div class="row">
                 <div id="effects" style="display:none">
                 <!-- <div id="collapse1" style="display:none"> -->
-                <div class="col-md-8 offset-md-2">
+                <div class="col-md-8 offset-md-3">
                     <img src="./image/edit.png">
                     <input class="form-control  input-box px-4 " id="ex2" type="text"   placeholder="first and last name">
                 </div>
-                <div class="col-md-8 offset-md-2 mt-4">
+                <div class="col-md-8 offset-md-3 mt-4">
                     <img src="./image/user.png">
                     <input class="form-control  input-box px-4 " id="ex2" type="text"  placeholder="email/mobile number">
                 </div>
-                <div class="mt-3" style="margin-left:250px;">
+                <div class="mt-3 staffmodal-btn">
                 <button class="btn btn-1 button1">Bulk import</button>
                 <button class="btn btn-1 btn-2 ">Add</button>
               </div>
@@ -1889,12 +1229,14 @@ import
           </table>
         </div>
     </div>
-          <div class="modal-footer">
-            <div class="d-flex justify-content-end" >
-            <div class="col-6 col-md-6">  <span class="primary">Bulk import how to?</span></div>
+          <div class="modal-footer d-flex justify-content-end">
+            <div class="col-6 col-md-6">
+              <a class="primary link" href="#">
+                Bulk import how to?
+              </a>
+            </div>
             <button class="btn btn-1 button1">Cancel</button>
             <button class="btn btn-1 btn-2 px-2">Save</button>
-            </div>
           </div>
         </div>
       </div>
@@ -1905,10 +1247,10 @@ import
  <div class="modal" id="import">
   <div class="modal-dialog modal-md">
     <div class="modal-content modalbg modaltop">
-      <div class="modal-header staffmodal-header" style="padding:10px;">
+      <div class="modal-header staffmodal-header">
       <h5 class="col-12 modal-title mainfont" >
         <strong>Confirm your import</strong>
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:-12px;">
+      <button type="button" class="close staffmodal-close" data-dismiss="modal" aria-label="Close">
       <span aria-hidden="true">&times;</span>
       </button>
     </h5>
@@ -2065,9 +1407,6 @@ import
     input::placeholder {
     text-align: center;
     }
-    /* option{
-    text-align: center;
-    } */
     input{
       text-align:center;
     }
@@ -2079,38 +1418,12 @@ import
       margin-left:30px;
       margin-top:20px;
     }
-    .selection-icon{
-    text-align: center;
-    padding: 5rem 5rem 2rem;
-    }
-    #dropdown-image-add-class .list-inline {
-          padding: 2rem 1rem;
-    }
-    .list-inline {
-        padding-left: 0;
-        list-style: none;
-        margin-left: -5px;
-      }
-    #dropdown-image-add-class {
-        max-height:15rem;
-        max-width: 45rem;
-        border-radius: 5px;
-        overflow-y: auto;
-        overflow-x: hidden;
-      /*  left: auto !important;*/
-    }
-    .dropdown-btn{
-      background-color:#f2f2f2ff;
-      padding:0 0 0 0;
-    }
+
     #ex2::-webkit-input-placeholder{
       color:var(--main-font-color);
     }
     #ex3::-webkit-input-placeholder{
       color:#000000ff;
-    }
-    .dropdown-img{
-      padding:2rem 2rem;
     }
     .mainfont{
       color:var(--main-mainfont-color);
@@ -2227,14 +1540,18 @@ import
     .login-footer{
       border:none;
       margin-top:25px;
+      float:right;
     }
     .loginfooter-btn{
       color:var(--main-primary-color);
       margin-left:-30px;
     }
-    .footer-2{
-    padding-top:0.5rem;
-    padding-bottom:0rem;
+    .classmodal-footer{
+      border:none;
+    float:right;
+    }
+    .table-responsive{
+      max-height:350px;
     }
     .modalbg{
       border-radius:20px;
@@ -2316,6 +1633,7 @@ import
     }
     .logoheader{
       margin-left:30px;
+      text-align: center;
     }
     .login-close{
       margin-left:25px;
@@ -2328,11 +1646,83 @@ import
         font-size:12px;
         margin-top:-20px;
       }
+      .signup-footer{
+        border:none;
+        margin-top:25px;
+      }
+      .signup-instruction{
+        font-size:12px;
+        text-align: center;
+      }
+      .classmodal-close{
+        margin-top:12px;
+        margin-right:10px;
+      }
+      .classmodal-header{
+        font-size:15px;
+        text-align: center;
+      }
+      .classmodal{
+        margin-top:-20px;
+      }
+      .dropdownbtn{
+        background-color: #f2f2f2;
+      }
+      .selection-icon{
+      text-align: center;
+      padding: 3rem ;
+      }
+      #dropdown-image-add-class .class-list{
+            padding:1rem;
+      }
+      .class-list{
+          padding-left: 0;
+          list-style: none;
+          margin-left: -5px;
+        }
+      #dropdown-image-add-class {
+          max-height:15rem;
+          max-width:22rem;
+          border-radius:5px;
+          overflow-y: auto;
+          overflow-x: hidden;
+        /*  left: auto !important;*/
+      }
+      .list-picture{
+        margin:5px;
+      }
+      .classmodal-content{
+        margin-left:10px;
+        margin-top:15px;
+      }
+      .classmodal-inputfield{
+        margin-right:20px;
+      }
+      .classmodal-dropdown{
+        border-radius:20px;
+      }
+    .studentmodal{
+      margin-top:5px;
+      font-size:18px;
+    }
+    .parentprofile-padding{
+      padding:0 0 0 0;
+    }
+    .username-font{
+      font-size:15px;
+    }
+    .usersubname-font{
+      font-size:13px;
+    }
+    .parentmodal-downarrow{
+      margin-left:5px;
+    }
+    .teacher-modal{
+      margin-top:5px;
+      font-size:18px;
+    }
     .borderless td, .borderless td {
        border: none;
-    }
-    .table-responsive {
-       max-height:300px;
     }
     .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
      background-color:none;
@@ -2341,7 +1731,7 @@ import
      white-space: nowrap;
     }
     .student-list{
-        background-color: #f5f5f5;
+        background-color: #f2f2f2;
         border:none;
         width:100%;
         height:350px;
@@ -2351,10 +1741,10 @@ import
     .student-detail{
       padding:0 0 0 0px;
     }
-    #dropdown-student-add-parent .list-inline1{
+    #dropdown-student-add-parent .parent-list{
     width:260px;
     }
-    .list-inline1{
+    .parent-list{
     padding:0 0 0 0;
     }
     #dropdown-student-add-parent{
@@ -2370,6 +1760,13 @@ import
     }
     .staffmodal-header{
       font-size:12px;
+      padding:10px;
+    }
+    .staffmodal-close{
+      margin-top:-12px;
+    }
+    .staffmodal-btn{
+      margin-left:250px;
     }
   .staffarrow-btn{
     width:64px;
