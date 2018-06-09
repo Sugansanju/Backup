@@ -251,7 +251,7 @@ import
        <div class="modal-header modalhead">
        <h3 class="col-12 modal-title  logoheader">
        <img src="./image/logo.png">
-       <button type="button" class="close login-close" data-dismiss="modal" aria-label="Close">
+       <button type="button" class="close login-close" data-dismiss="modal" aria-label="Close" >
        <span aria-hidden="true">&times;</span>
        </button>
        </h3>
@@ -292,7 +292,7 @@ import
        <div class="modal-dialog modal-md">
          <div class="modal-content modalbg modaltop">
            <div>
-             <button type="button" class="close classmodal-close" data-dismiss="modal" aria-label="Close" style="">
+             <button type="button" class="close classmodal-close" data-dismiss="modal" aria-label="Close" data-backdrop="false">
              <span aria-hidden="true">&times;</span>
              </button>
            </div>
@@ -326,44 +326,41 @@ import
    <div role="tabbable-line" id="addclass" class="container tab-pane active">
        <div class="classmodal">
          <div class="dropdown selection-icon">
-           <button type="button" class="btn dropdownbtn" data-toggle="dropdown">
+           <!-- <button type="button" class="btn dropdownbtn" data-toggle="dropdown">
              <img src="./image/physics.png">
              <span class="dropdown-toggle">
              </span>
            </button>
-           <ul id="dropdown-image-add-class" aria-labelledby="dropdownMenu1" class="dropdown-menu">
-             <ul class="class-list">
+           <ul id="dropdown-image-add-class" aria-labelledby="dropdownMenu1" class="dropdown-menu"> -->
+           <button type="button" class="btn" data-toggle="dropdown">
+         <span class="dropdown-button dropdown-toggle">
+           <img class="list-picture" src="./image/physics.png">
+         </span>
+       </button>
+         <ul id="dropdown-image-add-class" class="dropdown-class dropdown-menu class-list" >
+             <!-- <ul class="class-list"> -->
                <li >
-                 <a>
                    <img class="list-picture" src="./image/physics.png">
-                 </a>
                </li>
                <li >
-                 <a>
                    <img  class="list-picture" src="./image/maths.png">
-                 </a>
                </li>
                <li >
-                 <a>
                    <img  class="list-picture"  src="./image/che.png">
-                 </a>
-               </li>
-               <li >
-                 <a>
-                   <img  class="list-picture"  src="./image/physics.png" >
-                 </a>
+
                </li>
                <li>
-                 <a>
+                   <img  class="list-picture"  src="./image/physics.png" >
+               </li>
+               <li>
                    <img  class="list-picture"  src="./image/maths.png">
-                 </a>
                </li>
                <li >
                  <a>
                    <img  class="list-picture" src="./image/che.png" >
                  </a>
                </li>
-               <li >
+               <li>
                  <a>
                    <img  class="list-picture" src="./image/physics.png">
                  </a>
@@ -423,7 +420,7 @@ import
                    <img class="list-picture" src="./image/che.png">
                  </a>
                </li>
-             </ul>
+             <!-- </ul> -->
            </ul>
          </div>
          <div class="classmodal-content">
@@ -606,7 +603,89 @@ import
      </div>
    </td>
      <td colspan="2">
-       <div class="dropdown">
+       <button type="button" class="btn dropdownbtn" data-toggle="dropdown">
+     <span class="parent1">
+       <div class="row">
+         <div class="col-1 col-md-1">
+           <img src="./image/ava1.png">
+         </div>
+         <div class="col-5 col-md-5 px-4">
+           <div class="username-font">
+             <b>Ravi Kumar</b>
+           </div>
+           <div class="mainfont usersubname-font">
+             ravikumar@gmail.com
+           </div>
+         </div>
+         <!-- <div class="col parentmodal-downarrow">
+           <img src="./image/arrow.png">
+         </div> -->
+     </div>
+     </span>
+   </button>
+   <ul id="dropdown-student-add-parent" class="parent-class dropdown-menu parent-list">
+           <li>
+             <div class="row">
+               <div class="col-1 col-md-1">
+                 <img src="./image/profile1.png">
+               </div>
+               <div class="col-5 col-md-5 px-4">
+                 <div class="username-font">
+                   <b>Divya Dharshini</b>
+                 </div>
+                 <div class="mainfont usersubname-font">
+                   divya12@gmail.com
+                 </div>
+               </div>
+           </div>
+           </li>
+           <li>
+             <div class="row">
+               <div class="col-1 col-md-1">
+                 <img src="./image/profile3.png">
+               </div>
+               <div class="col-5 col-md-5 px-4">
+                 <div class="username-font">
+                   <b>Neha</b>
+                 </div>
+                 <div class="mainfont usersubname-font">
+                   Nehasri@gmail.com
+                 </div>
+               </div>
+           </div>
+         </li>
+         <li>
+           <div class="row">
+             <div class="col-1 col-md-1">
+               <img src="./image/profile2.png">
+             </div>
+             <div class="col-5 col-md-5 px-4">
+               <div class="username-font">
+                 <b>Nivin</b>
+               </div>
+               <div class="mainfont usersubname-font">
+                 nivi20@gmail.com
+               </div>
+             </div>
+         </div>
+       </li>
+       <li>
+         <div class="row">
+           <div class="col-1 col-md-1">
+             <img src="./image/profile4.png">
+           </div>
+           <div class="col-5 col-md-5 px-4">
+             <div class="username-font">
+               <b>Anbu</b>
+             </div>
+             <div class="mainfont usersubname-font">
+               anbu90@gmail.com
+             </div>
+           </div>
+       </div>
+     </li>
+       </ul>
+       <!-- <div class="dropdown">
           <button type="button dropdown-toggle" class="btn dropdownbtn" data-toggle="dropdown">
             <div class="row">
               <div class="col-1 col-md-1">
@@ -681,7 +760,7 @@ import
                   </div>
                 </div>
               </div>
-            </ul>
+            </ul>-->
           </div>
           </td>
         </tr>
@@ -707,7 +786,7 @@ import
           </div>
         </td>
           <td colspan="2">
-            <div class="dropdown">
+            <!-- <div class="dropdown">
                <button type="button dropdown-toggle" class="btn dropdownbtn" data-toggle="dropdown">
                  <div class="row">
                    <div class="col-1 col-md-1">
@@ -746,7 +825,89 @@ import
                      </div>
                    </div>
                  </ul>
+               </div> -->
+               <button type="button" class="btn dropdownbtn" data-toggle="dropdown">
+             <span class="parent2">
+               <div class="row">
+                 <div class="col-1 col-md-1">
+                   <img src="./image/ava1.png">
+                 </div>
+                 <div class="col-5 col-md-5 px-4">
+                   <div class="username-font">
+                     <b>Ravi Kumar</b>
+                   </div>
+                   <div class="mainfont usersubname-font">
+                     ravikumar@gmail.com
+                   </div>
+                 </div>
+                 <!-- <div class="col parentmodal-downarrow">
+                   <img src="./image/arrow.png">
+                 </div> -->
+             </div>
+             </span>
+           </button>
+           <ul id="dropdown-student-add-parent" class="parent2-class dropdown-menu parent-list">
+                   <li>
+                     <div class="row">
+                       <div class="col-1 col-md-1">
+                         <img src="./image/profile1.png">
+                       </div>
+                       <div class="col-5 col-md-5 px-4">
+                         <div class="username-font">
+                           <b>Divya Dharshini</b>
+                         </div>
+                         <div class="mainfont usersubname-font">
+                           divya12@gmail.com
+                         </div>
+                       </div>
+                   </div>
+                   </li>
+                   <li>
+                     <div class="row">
+                       <div class="col-1 col-md-1">
+                         <img src="./image/profile3.png">
+                       </div>
+                       <div class="col-5 col-md-5 px-4">
+                         <div class="username-font">
+                           <b>Neha</b>
+                         </div>
+                         <div class="mainfont usersubname-font">
+                           Nehasri@gmail.com
+                         </div>
+                       </div>
+                   </div>
+                 </li>
+                 <li>
+                   <div class="row">
+                     <div class="col-1 col-md-1">
+                       <img src="./image/profile2.png">
+                     </div>
+                     <div class="col-5 col-md-5 px-4">
+                       <div class="username-font">
+                         <b>Nivin</b>
+                       </div>
+                       <div class="mainfont usersubname-font">
+                         nivi20@gmail.com
+                       </div>
+                     </div>
+                 </div>
+               </li>
+               <li>
+                 <div class="row">
+                   <div class="col-1 col-md-1">
+                     <img src="./image/profile4.png">
+                   </div>
+                   <div class="col-5 col-md-5 px-4">
+                     <div class="username-font">
+                       <b>Anbu</b>
+                     </div>
+                     <div class="mainfont usersubname-font">
+                       anbu90@gmail.com
+                     </div>
+                   </div>
                </div>
+             </li>
+               </ul>
                </td>
              </tr>
  <!-- end 2nd row -->
@@ -1132,23 +1293,24 @@ import
        </div>
        <div class="modal-body">
            <div class="row">
-             <div id="effects" style="display:none">
+             <div id="content" style="display:none">
              <!-- <div id="collapse1" style="display:none"> -->
              <div class="col-md-8 offset-md-3">
                  <img src="./image/edit.png">
-                 <input class="form-control  input-box px-4 " id="ex2" type="text"   placeholder="first and last name">
+                 <input class="form-control  input-box px-4 " id="name" type="text"   placeholder="first and last name">
              </div>
              <div class="col-md-8 offset-md-3 mt-4">
                  <img src="./image/user.png">
-                 <input class="form-control  input-box px-4 " id="ex2" type="text"  placeholder="email/mobile number">
+                 <input class="form-control  input-box px-4 " id="email" type="text"  placeholder="email/mobile number">
              </div>
              <div class="mt-3 staffmodal-btn">
-             <button class="btn btn-1 button1">Bulk import</button>
-             <button class="btn btn-1 btn-2 ">Add</button>
+             <button class="btn btn-1 button1" id="add">Bulk import</button>
+             <button class="btn btn-1 btn-2 " id="add">Add</button>
            </div>
          </div>
-         <div class="col-md-9 offset-md-9" >
-           <button class="btn  btn-2 staffarrow-btn" onclick="myFunction()"><i class="fa fa-angle-up"></i></button>
+         <div class="col-md-9 offset-md-9">
+           <!-- <button class="btn  btn-2 staffarrow-btn" onclick="myFunction()" id="staff"><i class="fa fa-angle-up"></i></button> -->
+              <button class="btn  btn-2 staffarrow-btn" id="staff"><i class="fa fa-angle-up"></i></button>
          </div>
          <!-- <div class="col-md-9 offset-md-9" >
            <button class="btn btn-2 staffarrow-btn nav-toggle" href="#collapse1">show</button>
@@ -1632,6 +1794,7 @@ import
  }
  .modal-backdrop {
    position: fixed;
+   backdrop:false;
    top: 0;
    right: 0;
    bottom: 0;
@@ -1742,11 +1905,14 @@ import
    text-align: center;
    padding: 3rem ;
    }
-   #dropdown-image-add-class .class-list{
-         padding:1rem;
-   }
-   .class-list{
-       padding-left: 0;
+.button, .dropdown-menu{
+  margin:10px auto;
+}
+ #dropdown-image-add-class .class-list{
+       padding:1rem;
+ }
+ .class-list{
+     padding-left: 0;
        list-style: none;
        margin-left: -5px;
      }
@@ -1804,7 +1970,7 @@ import
      border:none;
      width:100%;
      height:350px;
-     padding:0 0 0 0px;
+     /* padding:0 0 0 0px; */
      overflow: auto;
  }
  .student-detail{
@@ -1867,13 +2033,90 @@ import
 }
  </style>
 <script>
-function myFunction() {
- var x = document.getElementById("effects");
- if (x.style.display === "none") {
-     x.style.display = "block";
- } else {
-   x.style.display = "none";
- }
-}
+
+ // staff modal
+
+$( "#content" ).hide();
+$( "#staff" ).click(function( event ) {
+  event.preventDefault();
+  $( this ).hide();
+  $("#content").show();
+  $("#add").show();
+});
+$("#add").click(function(event){
+  event.preventDefault();
+  $(this).hide();
+  $("#staff").show();
+ $("#content").hide();
+});
+
+// end staff modal
+
+// class modal
+
+(function() {
+  var button, list;
+
+  button = $(".dropdown-button");
+
+  list = $(".dropdown-class");
+
+  button.on("click", function() {
+    list.toggle();
+    // return button.toggleClass("active");
+  });
+
+  list.children().on("click", function() {
+    button.html($(this).html());
+    // button.css("color", "#72d2ff");
+    list.toggle();
+    return button.toggleClass("active");
+  });
+
+}).call(this);
+
+// end class modal
+
+(function() {
+  var button, list;
+
+  button = $(".parent1");
+
+  list = $(".parent-class");
+
+  button.on("click", function() {
+    list.toggle();
+    // return button.toggleClass("active");
+  });
+
+  list.children().on("click", function() {
+    button.html($(this).html());
+    // button.css("color", "#72d2ff");
+    list.toggle();
+    return button.toggleClass("active");
+  });
+
+}).call(this);
+
+(function() {
+  var button, list;
+
+  button = $(".parent2");
+
+  list = $(".parent2-class");
+
+  button.on("click", function() {
+    list.toggle();
+    // return button.toggleClass("active");
+  });
+
+  list.children().on("click", function() {
+    button.html($(this).html());
+    // button.css("color", "#72d2ff");
+    list.toggle();
+    return button.toggleClass("active");
+  });
+
+}).call(this);
  </script>
  </html>

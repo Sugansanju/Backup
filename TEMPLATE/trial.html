@@ -11,58 +11,23 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-  <div class="tabbable-line">
-    <ul class="nav nav-tabs">
-          <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
-          </li>
-          </ul>
-      </div>
+  <div class="btn-group">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left:50px;">
+    Right-aligned menu
+  </button>
+  <div class="dropdown-menu">
+    <button class="dropdown-item" type="button">Action</button>
+    <button class="dropdown-item" type="button">Another action</button>
+    <button class="dropdown-item" type="button">Something else here</button>
+  </div>
+</div>
 </body>
 <style>
-.tabbable-line > .nav-tabs {
-  border: 0;
-  margin: 0px;
+.button, .dropdown-menu{
+  margin:10px auto;
 }
-.tabbable-line > .nav-tabs > li {
-  margin-right: 2px;
-  border: 5;
-}
-.tabbable-line > .nav-tabs > li > a {
-  border: 0;
-  margin-right: 0;
-  color: #19387d;
-}
-.tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
-  border-bottom: 4px solid #b9aa7f;
-}
-.tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
-  border: 0;
-  background: none !important;
-  color: #b9aa7f;
-}
-.tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i {
-  color: #a6a6a6;
-}
-.tabbable-line > .nav-tabs > li > a.active {
-   border-bottom: 4px solid #b9aa7f;
-  color: #b9aa7f;
-}
-.tabbable-line > .tab-content {
-  margin-top: -3px;
-  background-color: #fff;
-  border: 0;
-  padding: 15px 0;
-}
-
-
 </style>
 <script>
+
 </script>
 </html>
