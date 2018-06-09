@@ -102,11 +102,11 @@
   <!--account setting modal  -->
   <div class="modal" id="accountsetting">
     <div class="modal-dialog modal-md">
-      <div class="modal-content modalbg" style="margin-top:105px;">
-        <div class="modal-header staffmodal-header" style="padding:10px;">
+      <div class="modal-content modalbg account-modal">
+        <div class="modal-header staffmodal-header accountmodal-header" >
           <h7 class="col-12 modal-title mainfont">
             <strong>Account setting</strong>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:-12px;">
+            <button type="button" class="close accountmodal-close" data-dismiss="modal" aria-label="Close" >
      <span aria-hidden="true">&times;</span>
      </button>
           </h7>
@@ -131,21 +131,20 @@
                 <a href="#privacy" class="nav-link" data-toggle="tab" role="tab" aria-controls="privacy">Privacy and Terms</a>
               </li>
             </ul>
-
             <!-- tab content -->
             <div class="tab-content">
               <!-- profile modal -->
               <div class="tab-pane fade show active" id="profile" role="tabpanel">
-                <div style="text-align:center;">
+                <div class="profile-image">
                   <img src="./image/avatar.png">
                 </div>
-                <div class="form-group" style="margin-left:20px;">
+                <div class="form-group profile-input">
                   <label class="mainfont" for="title">Title</label>
                   <input class="form-control input-box px-4 " id="ex2" type="text" placeholder="Title">
                 </div>
-                <div class="form-group" style="margin-left:20px;">
+                <div class="form-group profile-input">
                   <label class="mainfont" for="name">First/Last Name</label>
-                  <input class="form-control input-box px-4 " id="ex2" type="text" placeholder="Fist and Last name">
+                  <input class="form-control input-box px-4 " id="ex2" type="text" placeholder="First and Last name">
                 </div>
                 <div class="float-right mt-4">
                   <button class="btn btn-1 btn-2 px-2">Save</button>
@@ -155,11 +154,11 @@
 
               <!-- contact modal -->
               <div class="tab-pane fade" id="contact" role="tabpanel">
-                <div class="form-group" style="margin-left:20px;margin-top:30px;">
+                <div class="form-group profile-edit" style="">
                   <label class="mainfont" for="email">Email</label>
                   <input class="form-control input-box px-4 emailbox" type="text" placeholder="sanjana@gmail.com" readonly>
                 </div>
-                <div class="form-group" style="margin-left:20px;">
+                <div class="form-group profile-input">
                   <label class="mainfont" for="mobno">Mobile Number</label>
                   <!-- <div class="form-inline"> -->
                   <input class="form-control input-box px-4" id="ex2" type="text" placeholder="mobile number">
@@ -173,14 +172,14 @@
 
               <!-- language modal -->
               <div class="tab-pane fade" id="language" role="tabpanel">
-                <div class="form-group col-md-12" style="margin-left:20px;margin-top:30px;">
+                <div class="form-group col-md-12 profile-edit">
                   <label class="mainfont" for="language">Language</label>
                   <!-- <input class="form-control input-box px-4 emailbox" type="text" placeholder="sanjana@gmail.com" readonly> -->
                   <select class="form-control input-box">
                             <option value="uk">English(UK)</option>
                         </select>
                 </div>
-                <div class="form-group col-md-12" style="margin-left:20px;">
+                <div class="form-group col-md-12 profile-input">
                   <label class="mainfont" for="time">Time Zone</label>
                   <select class="form-control input-box">
                             <option value="asia">Asia/Kolkata</option>
@@ -195,19 +194,19 @@
               <!-- advanced modal -->
               <div class="tab-pane fade" id="advanced" role="tabpanel">
                 <div>
-                  <div class="mainfont px-2" style="font-size:13px;margin-top:13px;">
+                  <div class="mainfont px-2 advanced-setting">
                     <strong>Active Devices</strong>
-                    <div class="" style="margin-left:200px;margin-top:-25px;">
+                    <div class="advancedsetting-btn">
                       <button class="btn btn-1 button1 px-2">View All</button>
                     </div>
                   </div>
-                  <div class="mainfont px-2" style="margin-top:8px;font-size:12px;">
+                  <div class="mainfont px-2 advancedsetting-instruction">
                     Click 'view all' to see a complete listing of devices You're currently logged in from.
                   </div>
                 </div>
                 <div>
-                  <div class="mainfont px-2" style="font-size:13px;margin-top:20px;">
-                    <strong>Allow Connection Request</strong>
+                  <div class="mainfont px-2 advancedsetting-heading">
+                  <strong>Allow Connection Request</strong>
                     <!-- <div class="onoffswitch float-right"  style="margin-left:85px;">
                             <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
                             <label class="onoffswitch-label" for="myonoffswitch">
@@ -215,7 +214,7 @@
                               <span class="onoffswitch-switch"></span>
                             </label>
                           </div> -->
-                    <div class="flipswitch" style="margin-left:220px;margin-top:-25px;">
+                    <div class="flipswitch option-switch">
                       <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>
                       <label class="flipswitch-label" for="fs">
                               <div class="flipswitch-inner"></div>
@@ -223,48 +222,48 @@
                             </label>
                     </div>
                   </div>
-                  <div class="mainfont px-2" style="margin-top:8px;font-size:12px;">
+                  <div class="mainfont px-2 advancedsetting-instruction">
                     You will be requested to join other classes,institutes which you can either approve or decline.
                   </div>
                 </div>
                 <div>
-                  <div class="mainfont px-2" style="font-size:13px;margin-top:20px;">
+                  <div class="mainfont px-2 advancedsetting-heading">
                     <strong>Allow Notifications</strong>
-                    <div class="flipswitch" style="margin-left:220px;margin-top:-25px;">
-                      <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>
-                      <label class="flipswitch-label" for="fs">
+                    <div class="flipswitch option-switch">
+                      <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs1" checked>
+                      <label class="flipswitch-label" for="fs1">
                               <div class="flipswitch-inner"></div>
                               <div class="flipswitch-switch"></div>
                             </label>
                     </div>
                   </div>
-                  <div class="mainfont px-2" style="margin-top:8px;font-size:12px;">
+                  <div class="mainfont px-2 advancedsetting-instruction">
                     You will be notified on new stories,chat messages, connection requests,etc.
                   </div>
                 </div>
                 <div>
-                  <div class="mainfont px-2" style="font-size:13px;margin-top:20px;">
+                  <div class="mainfont px-2 advancedsetting-heading">
                     <strong>Allow Email/Mobile Notifications</strong>
-                    <div class="flipswitch" style="margin-left:220px;margin-top:-25px;">
-                      <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs" checked>
-                      <label class="flipswitch-label" for="fs">
+                    <div class="flipswitch option-switch">
+                      <input type="checkbox" name="flipswitch" class="flipswitch-cb" id="fs3" checked>
+                      <label class="flipswitch-label" for="fs3">
                               <div class="flipswitch-inner"></div>
                               <div class="flipswitch-switch"></div>
                             </label>
                     </div>
                   </div>
-                  <div class="mainfont px-2" style="margin-top:8px;font-size:12px;">
+                  <div class="mainfont px-2 advancedsetting-instruction">
                     Mails and SMS will be sent to your registered email and mobile number when you are not online.
                   </div>
                 </div>
                 <div>
-                  <div class="mainfont px-2" style="font-size:13px;margin-top:20px;">
+                  <div class="mainfont px-2 advancedsetting-heading">
                     <strong>Delete Your Account</strong>
-                    <div class="" style="margin-left:200px;margin-top:-25px;">
+                    <div class="advancedsetting-btn">
                       <button class="btn btn-1 button2 px-2">Delete</button>
                     </div>
                   </div>
-                  <div class="mainfont px-2" style="margin-top:8px;font-size:12px;">
+                  <div class="mainfont px-2 advancedsetting-instruction">
                     This will be remove all notification about you,your classes, and your student.Once deleted,your account can't be
                   </div>
                 </div>
@@ -305,10 +304,6 @@
   input::placeholder {
     text-align: center;
   }
-
-  /* option{
-text-align: center;
-} */
 
   input {
     text-align: center;
@@ -479,209 +474,217 @@ text-align: center;
     top: 0;
     width: 100%;
   }
-
-  .modal-header {
-    margin-left: 22px;
-    margin-right: 20px;
-  }
-
-  .header {
-    margin-top: -40px;
-  }
-
-  .footer-1 {
-    border: none;
-    margin-top: 25px;
-  }
-
-  .footer-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0rem;
-  }
-
-  .modalbg {
-    border-radius: 20px;
-    box-shadow: 0 0 30px #000;
-  }
-
-  .modal-backdrop {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1030;
-    background-color: var(--main-primary-color);
-    opacity: 0.1;
-  }
-
-  ul li {
-    display: inline;
-    text-align: center;
-  }
-
-  .link:hover {
-    text-decoration: none;
-    color: var(--main-primary-color);
-  }
-
-  .button1 {
-    background-color: #fff;
-    color: var(--main-primary-color);
-    border: 2px solid var(--main-primary-color);
-  }
-
-  .button2 {
-    background-color: #fff;
-    color: red;
-    border: 2px solid red;
-  }
-
-  .btn-1 {
-    border-radius: 20px;
-    width: 95px;
-    padding: 3px;
-    margin: auto;
-  }
-
-  .btn-2 {
-    background-color: var(--main-primary-color);
-    color: #fff;
-  }
-
-  .nav-tabs--vertical {
-    margin-top: -9px;
-    border-right: 1px solid #ddd;
-    border-bottom: none;
-    /* display: flex; */
-    flex-flow: column nowrap;
-  }
-
-  .nav-tabs--left .nav-link {
-    background-color: #f7f7f7;
-    text-align: left;
-    border-bottom: none;
-    color: var(--main-mainfont-color);
-    padding: 15px 20px 4px 5px;
-    white-space: nowrap;
-  }
-
-  .nav-tabs--left .nav-link.active {
-    border-bottom-color: #ddd;
-    border-right-color: #fff;
-    color: var(--main-mainfont-color);
-    border-bottom-left-radius: 0.25rem;
-    border-top-right-radius: 0;
-    border-right: 1px solid #ddd;
-    margin-right: -1px;
-  }
-
-  .nav-tabs--left .nav-link.active:hover {
-    background-color: #fff;
-    border-right: 1px solid #ddd;
-  }
-
-  .modal-footer {
-    border: none;
-  }
-
-  .emailbox {
-    background-color: #ccccccff;
-  }
-
-  .contact-button {
-    background-color: #fff;
-    width: auto;
-    color: var(--main-primary-color);
-  }
-
-  .flipswitch {
-    position: relative;
-    width: 79px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-  }
-
-  .flipswitch input[type=checkbox] {
-    display: none;
-  }
-
-  .flipswitch-label {
-    display: block;
-    overflow: hidden;
-    cursor: pointer;
-    border: 2px solid var(--main-primary-color);
-    border-radius: 50px;
-  }
-
-  .flipswitch-inner {
-    width: 200%;
-    margin-left: -100%;
-    -webkit-transition: margin 0.3s ease-in 0s;
-    -moz-transition: margin 0.3s ease-in 0s;
-    -ms-transition: margin 0.3s ease-in 0s;
-    -o-transition: margin 0.3s ease-in 0s;
-    transition: margin 0.3s ease-in 0s;
-  }
-
-  .flipswitch-inner:before,
-  .flipswitch-inner:after {
-    float: left;
-    width: 50%;
-    height: 28px;
-    padding: 0;
-    line-height: 28px;
-    font-size: 13px;
-    color: white;
-    font-family: Trebuchet, Arial, sans-serif;
-    font-weight: bold;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-
-  .flipswitch-inner:before {
-    content: "ON";
-    padding-left: 12px;
-    background-color: #FFFFFF;
-    color: var(--main-mainfont-color);
-  }
-
-  .flipswitch-inner:after {
-    content: "OFF";
-    padding-right: 12px;
-    background-color: #fff;
-    color: var(--main-mainfont-color);
-    text-align: right;
-  }
-
-  .flipswitch-switch {
-    width: 21px;
-    margin: 3.5px;
-    background: var(--main-primary-color);
-    border: 2px solid var(--main-primary-color);
-    border-radius: 50px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 50px;
-    -webkit-transition: all 0.3s ease-in 0s;
-    -moz-transition: all 0.3s ease-in 0s;
-    -ms-transition: all 0.3s ease-in 0s;
-    -o-transition: all 0.3s ease-in 0s;
-    transition: all 0.3s ease-in 0s;
-  }
-
-  .flipswitch-cb:checked+.flipswitch-label .flipswitch-inner {
-    margin-left: 0;
-  }
-
-  .flipswitch-cb:checked+.flipswitch-label .flipswitch-switch {
-    right: 0;
-  }
+.account-modal{
+  margin-top:105px;
+}
+.accountmodal-header{
+padding:10px;
+}
+.accountmodal-close{
+  margin-top:-12px;
+}
+.profile-image{
+  text-align: center;
+}
+.profile-input{
+  margin-left:20px;
+}
+.profile-edit{
+  margin-left:20px;
+  margin-top:30px;
+}
+.advanced-setting{
+font-size:13px;
+margin-top:13px;
+}
+.advancedsetting-heading{
+  font-size:13px;
+  margin-top:20px;
+}
+.advancedsetting-btn{
+margin-left:200px;
+margin-top:-25px;
+}
+.advancedsetting-instruction{
+margin-top:8px;font-size:12px;
+}
+.option-switch{
+margin-left:220px;
+margin-top:-25px;
+}
+.modal-header {
+  margin-left: 22px;
+  margin-right: 20px;
+}
+.header {
+  margin-top: -40px;
+}
+.footer-1 {
+  border: none;
+  margin-top: 25px;
+}
+.footer-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0rem;
+}
+.modalbg {
+  border-radius: 20px;
+  box-shadow: 0 0 30px #000;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+  background-color: var(--main-primary-color);
+  opacity: 0.1;
+}
+ul li {
+  display: inline;
+  text-align: center;
+}
+.link:hover {
+  text-decoration: none;
+  color: var(--main-primary-color);
+}
+.button1 {
+  background-color: #fff;
+  color: var(--main-primary-color);
+  border: 2px solid var(--main-primary-color);
+}
+.button2 {
+  background-color: #fff;
+  color: red;
+  border: 2px solid red;
+}
+.btn-1 {
+  border-radius: 20px;
+  width: 95px;
+  padding: 3px;
+  margin: auto;
+}
+.btn-2 {
+  background-color: var(--main-primary-color);
+  color: #fff;
+}
+.nav-tabs--vertical {
+  margin-top: -9px;
+  border-right: 1px solid #ddd;
+  border-bottom: none;
+  /* display: flex; */
+  flex-flow: column nowrap;
+}
+.nav-tabs--left .nav-link {
+  background-color: #f7f7f7;
+  text-align: left;
+  border-bottom: none;
+  color: var(--main-mainfont-color);
+  padding: 15px 20px 4px 5px;
+  white-space: nowrap;
+}
+.nav-tabs--left .nav-link.active {
+  border-bottom-color: #ddd;
+  border-right-color: #fff;
+  color: var(--main-mainfont-color);
+  border-bottom-left-radius: 0.25rem;
+  border-top-right-radius: 0;
+  border-right: 1px solid #ddd;
+  margin-right: -1px;
+}
+.nav-tabs--left .nav-link.active:hover {
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+}
+.modal-footer {
+  border: none;
+}
+.emailbox {
+  background-color: #ccccccff;
+}
+.contact-button {
+  background-color: #fff;
+  width: auto;
+  color: var(--main-primary-color);
+}
+.flipswitch {
+  position: relative;
+  width: 79px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.flipswitch input[type=checkbox] {
+  display: none;
+}
+.flipswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid var(--main-primary-color);
+  border-radius: 50px;
+}
+.flipswitch-inner {
+  width: 200%;
+  margin-left: -100%;
+  -webkit-transition: margin 0.3s ease-in 0s;
+  -moz-transition: margin 0.3s ease-in 0s;
+  -ms-transition: margin 0.3s ease-in 0s;
+  -o-transition: margin 0.3s ease-in 0s;
+  transition: margin 0.3s ease-in 0s;
+}
+.flipswitch-inner:before,
+.flipswitch-inner:after {
+  float: left;
+  width: 50%;
+  height: 28px;
+  padding: 0;
+  line-height: 28px;
+  font-size: 13px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.flipswitch-inner:before {
+  content: "ON";
+  padding-left: 12px;
+  background-color: #FFFFFF;
+  color: var(--main-mainfont-color);
+}
+.flipswitch-inner:after {
+  content: "OFF";
+  padding-right: 12px;
+  background-color: #fff;
+  color: var(--main-mainfont-color);
+  text-align: right;
+}
+.flipswitch-switch {
+  width: 21px;
+  margin: 3.5px;
+  background: var(--main-primary-color);
+  border: 2px solid var(--main-primary-color);
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 50px;
+  -webkit-transition: all 0.3s ease-in 0s;
+  -moz-transition: all 0.3s ease-in 0s;
+  -ms-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+}
+.flipswitch-cb:checked+.flipswitch-label .flipswitch-inner {
+  margin-left: 0;
+}
+.flipswitch-cb:checked+.flipswitch-label .flipswitch-switch {
+  right: 0;
+}
 </style>
 <script>
 </script>
-
 </html>
